@@ -1,19 +1,24 @@
 open-sniper
 =================
 
-An open-source AIO defi toolkit.
+An open-source defi sniper.
 
 [![Node.js CI](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 **open-sniper** is free to download. 
 
-Donations: Reach out to https://t.me/earteaga88 on Telegram.
+Donations: 
+Reach out to https://t.me/spacemonk88 on Telegram.
 
-I created a group as well if anyone wants to join and discuss bugs/new features, etc.
-https://t.me/+hJ4bQRAANbNlNmI5
+Feature Requests: 
+Reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
 
-**NEW** documenatation site available: https://earteaga88.github.io/open-sniper/
+Bugs:
+Please submit an issue to this repo and include as much information as possible.
+
+Documenatation: 
+https://earteaga88.github.io/open-sniper/
 
 <!-- toc -->
 * [Installation](#installation)
@@ -26,8 +31,9 @@ https://t.me/+hJ4bQRAANbNlNmI5
 
 # Installation
 
-For transparency, binaries are built using GitHub Actions and published directly to a release. This happens during the "Release" step of the builds. 
-Direct link to example: https://github.com/earteaga88/open-sniper/runs/5576128314?check_suite_focus=true#step:9:10
+For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
+
+This happens during the "Release" step of the builds. 
 
 Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/earteaga88/open-sniper/releases/) for the latest version.
 
