@@ -1,0 +1,11 @@
+site_name: open-sniper
+theme:
+  name: material
+  features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.expand
+  - toc.follow
+  - toc.integrate
+  - navigation.top
+repo_url: https://github.com/earteaga88/open-sniper/
