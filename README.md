@@ -8,18 +8,28 @@ An open-source defi sniper.
 
 **open-sniper** is free to download. 
 
-Donations: 
+This is a fork of defi-cli which was abandoned and removed from github. 
+
+=================
+
+**Donations**
+
 Reach out to https://t.me/spacemonk88 on Telegram.
 
-Feature Requests: 
+**Feature Requests** 
+
 Reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
 
-Bugs:
+**Bugs**
+
 Please submit an issue to this repo and include as much information as possible.
 
-Documenatation: 
+**Documenatation** 
+
 https://earteaga88.github.io/open-sniper/
 
+
+# Table of Contents
 <!-- toc -->
 * [Installation](#installation)
 * [Quickstart](#quickstart)
