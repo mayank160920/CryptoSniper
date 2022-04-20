@@ -329,7 +329,7 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/config.ts)_
 
 ## `open-sniper help [COMMAND]`
 
@@ -372,7 +372,7 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/nodes.ts)_
 
 ## `open-sniper start`
 
@@ -389,7 +389,7 @@ EXAMPLES
   $ open-sniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/start.ts)_
 
 ## `open-sniper wallet [KEY] [VALUE]`
 
@@ -411,5 +411,5 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/wallet.ts)_
 <!-- commandsstop -->
