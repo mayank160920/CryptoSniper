@@ -1,20 +1,35 @@
 open-sniper
 =================
 
-An open-source AIO defi toolkit.
+An open-source defi sniper.
 
 [![Node.js CI](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 **open-sniper** is free to download. 
 
-Donations: Reach out to https://t.me/earteaga88 on Telegram.
+This is a fork of defi-cli which was abandoned and removed from github. 
 
-I created a group as well if anyone wants to join and discuss bugs/new features, etc.
-https://t.me/+hJ4bQRAANbNlNmI5
+=================
 
-**NEW** documenatation site available: https://earteaga88.github.io/open-sniper/
+**Donations**
 
+Reach out to https://t.me/spacemonk88 on Telegram.
+
+**Feature Requests** 
+
+Reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
+
+**Bugs**
+
+Please submit an issue to this repo and include as much information as possible.
+
+**Documenatation** 
+
+https://earteaga88.github.io/open-sniper/
+
+
+# Table of Contents
 <!-- toc -->
 * [Installation](#installation)
 * [Quickstart](#quickstart)
@@ -26,8 +41,9 @@ https://t.me/+hJ4bQRAANbNlNmI5
 
 # Installation
 
-For transparency, binaries are built using GitHub Actions and published directly to a release. This happens during the "Release" step of the builds. 
-Direct link to example: https://github.com/earteaga88/open-sniper/runs/5576128314?check_suite_focus=true#step:9:10
+For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
+
+This happens during the "Release" step of the builds. 
 
 Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/earteaga88/open-sniper/releases/) for the latest version.
 
@@ -313,7 +329,7 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/config.ts)_
 
 ## `open-sniper help [COMMAND]`
 
@@ -356,7 +372,7 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/nodes.ts)_
 
 ## `open-sniper start`
 
@@ -373,7 +389,7 @@ EXAMPLES
   $ open-sniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/start.ts)_
 
 ## `open-sniper wallet [KEY] [VALUE]`
 
@@ -395,5 +411,5 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v0.4.1/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/wallet.ts)_
 <!-- commandsstop -->
