@@ -24,7 +24,7 @@ We host shared and private nodes in our own datacenter and can get you setup wit
 
 **Donations**
 
-Reach out to d381143eed36c5fe7f4be6370638e7d13be244451d0de46388763eda53705ffd on Telegram.
+Reach out to https://t.me/spacemonk88 on Telegram.
 
 **Feature Requests** 
 
