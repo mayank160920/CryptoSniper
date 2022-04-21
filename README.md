@@ -1,6 +1,7 @@
 ![opensniper](https://user-images.githubusercontent.com/93244980/164549267-14c727fd-66e2-4aae-a3f3-4e6f2ce4a0fc.png)
 =================
-
+<div align="center">
+      <p align="center">
 An open-source defi sniper.
 
 [![Node.js CI](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml)
@@ -10,13 +11,16 @@ An open-source defi sniper.
 
 This is a fork of defi-cli which was abandoned and removed from github.
 
+
 **Premium Services Now Available**
 
 While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
 
 We host shared and private nodes in our own datacenter and can get you setup with a personal VPS to run open-sniper. Reach out to @spacemonk88 on Telegram for pricing and availability.
+    </p>
+</div>
+        <hr>
 
-=================
 
 **Donations**
 
@@ -34,6 +38,8 @@ Please submit an issue to this repo and include as much information as possible.
 
 https://earteaga88.github.io/open-sniper/
 
+<hr>
+
 **Is this safe?**
 
 
@@ -47,6 +53,8 @@ Open-Sniper is also scanned with multiple security products using GitHub Actions
 * Snyk
 * OSSR
 * CodeQL
+
+<hr>
 
 # Table of Contents
 <!-- toc -->
