@@ -1,4 +1,4 @@
-open-sniper
+![opensniper](https://user-images.githubusercontent.com/93244980/164549267-14c727fd-66e2-4aae-a3f3-4e6f2ce4a0fc.png)
 =================
 
 An open-source defi sniper.
@@ -8,13 +8,19 @@ An open-source defi sniper.
 
 **open-sniper** is free to download. 
 
-This is a fork of defi-cli which was abandoned and removed from github. 
+This is a fork of defi-cli which was abandoned and removed from github.
+
+**Premium Services Now Available**
+
+While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
+
+We host shared and private nodes in our own datacenter and can get you setup with a personal VPS to run open-sniper. Reach out to @spacemonk88 on Telegram for pricing and availability.
 
 =================
 
 **Donations**
 
-Reach out to https://t.me/spacemonk88 on Telegram.
+Reach out to d381143eed36c5fe7f4be6370638e7d13be244451d0de46388763eda53705ffd on Telegram.
 
 **Feature Requests** 
 
@@ -28,6 +34,17 @@ Please submit an issue to this repo and include as much information as possible.
 
 https://earteaga88.github.io/open-sniper/
 
+**Is this safe?**
+
+
+For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
+
+This happens during the "Release" step of the builds. 
+
+Open-Sniper is scanned with multiple security products using GitHub Actions.
+* Snyk
+* OSSR
+* CodeQL
 
 # Table of Contents
 <!-- toc -->
@@ -40,10 +57,6 @@ https://earteaga88.github.io/open-sniper/
 <!-- tocstop -->
 
 # Installation
-
-For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
-
-This happens during the "Release" step of the builds. 
 
 Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/earteaga88/open-sniper/releases/) for the latest version.
 
