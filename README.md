@@ -41,7 +41,9 @@ For transparency, binaries are built using GitHub Actions and published directly
 
 This happens during the "Release" step of the builds. 
 
-Open-Sniper is scanned with multiple security products using GitHub Actions.
+Dependabot constantly monitors for out-of-date dependency packages.
+
+Open-Sniper is also scanned with multiple security products using GitHub Actions.
 * Snyk
 * OSSR
 * CodeQL
