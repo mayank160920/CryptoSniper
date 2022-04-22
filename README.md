@@ -51,7 +51,7 @@ https://earteaga88.github.io/open-sniper/
 
 <hr>
 
-**Is this safe?**
+**Built With Security In Mind**
 
 
 For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
