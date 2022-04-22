@@ -7,6 +7,9 @@ An open-source defi sniper.
 [![Node.js CI](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
+![open-sniper](https://user-images.githubusercontent.com/93244980/164783285-de5d524d-66ef-44fb-b01e-e3a76ad27cec.png)
+
+        
 **open-sniper** is free to download. 
 
 This is a fork of defi-cli which was abandoned and removed from github.
