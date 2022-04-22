@@ -17,7 +17,15 @@ This is a fork of defi-cli which was abandoned and removed from github.
 While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
 
 We host shared and private nodes in our own datacenter and can get you setup with a personal VPS to run open-sniper. Reach out to @spacemonk88 on Telegram for pricing and availability.
-    </p>
+        
+        
+<hr>
+
+**Contributors**
+
+[![Contributors Display](https://badges.pufler.dev/contributors/earteaga88/open-sniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
+  
+</p>
 </div>
         <hr>
 
@@ -53,6 +61,7 @@ Open-Sniper is also scanned with multiple security products using GitHub Actions
 * Snyk
 * OSSR
 * CodeQL
+
 
 <hr>
 
