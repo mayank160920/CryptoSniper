@@ -12,9 +12,6 @@ An open-source defi sniper.
         
 **open-sniper** is free to download. 
 
-This is a fork of defi-cli which was abandoned and removed from github.
-
-
 **Premium Services Now Available**
 
 While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
