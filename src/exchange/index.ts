@@ -699,9 +699,9 @@ export const afterSwapMonitor = (userAddress: any, privateKey: any, contractAddr
   })
 }
 
-export const watchMempool = async (contractAddress: any) => {
+export const watchMempool = async (contractAddress: any, blockDelay: any) => {
   return new Promise<void>(resolve => {
-    const spinner = ora({spinner: 'aesthetic'}).start()
+    const spinner = ora({spinner: 'aesthetic'}).start("Waiting for add liquitidy transactions...")
     let count = 0
     const subscription = web3.eth
     .subscribe('pendingTransactions', async function (error: any, result: any) {
@@ -733,9 +733,19 @@ export const watchMempool = async (contractAddress: any) => {
                     decodedInput.params[1].value.toLowerCase() ===
                       contractAddress.toLowerCase()))
         ) {
-          spinner.succeed('Add liquidity event detected!')
+          spinner.succeed('Add liquidity event detected! Waiting for' + blockDelay + 'blocks...')
+          let transactionReceipt = null;
+          while (transactionReceipt === null) {
+              transactionReceipt = await web3.eth
+                  .getTransactionReceipt(txHash)
+                  .catch(() => { });
+          }
+          let blockNumber = await web3.eth.getBlockNumber();
+          while (blockNumber <= transactionReceipt.blockNumber + blockDelay) {
+              blockNumber = await web3.eth.getBlockNumber();
+          }
           subscription.unsubscribe(function (error: any, success: any) {
-            // if (success) console.log('Successfully unsubscribed!')
+            //
           })
           return resolve()
         }

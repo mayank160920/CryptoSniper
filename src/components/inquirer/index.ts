@@ -176,9 +176,6 @@ export const exchangeMenuSelection = (exchange: any) => {
       choices = [{
         name: 'Fair Launch Sniping Tools',
         value: 10,
-      }, {
-        name: 'Flash Loan Arbitrage Bot',
-        value: 20,
       }, new inquirer.Separator(), reload, latencyTests, switchExchange, quitCli]
       break
 
@@ -193,9 +190,6 @@ export const exchangeMenuSelection = (exchange: any) => {
       choices = [{
         name: 'Fair Launch Sniping Tools',
         value: 10,
-      }, {
-        name: 'Flash Loan Arbitrage Bot',
-        value: 20,
       }, {
         name: 'CoinMarketCap Sniper',
         value: 30,
@@ -300,14 +294,14 @@ export const exchangeMenuSelection = (exchange: any) => {
       message: 'Select Mode:',
       pageSize: 88,
       choices: [{
-        name: 'Telegram Scanner',
-        value: 110,
+        name: 'Mempool Sniper',
+        value: 130,
       }, {
-        name: 'Manual Input Address',
+        name: 'Instant Sniper',
         value: 120,
       }, {
-        name: 'Mempool On-Chain Order',
-        value: 130,
+        name: 'Telegram Sniper',
+        value: 110,
       }, new inquirer.Separator(), previousMenu],
       when: (exchangeChoice: any) => exchangeChoice.option === 10,
     }, {

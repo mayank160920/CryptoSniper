@@ -21,6 +21,10 @@ const configSchema = {
     type: 'string',
     default: '100',
   },
+  mempool_block_delay: {
+    type: 'string',
+    default: '2',
+  },
   iteration: {
     type: 'string',
     default: '1',
@@ -76,6 +80,11 @@ const configSchema = {
 export const config = new Conf({
   schema: configSchema,
   configName: 'config',
+  migrations: {
+		'1.0.2': (store: { set: (arg0: string, arg1: string) => void; }) => {
+			store.set('mempool_block_delay', '2');
+    },
+	},
   // @ts-expect-error ts-migrate(2554) FIXME: Expected 1 arguments, but got 0.
   cwd: getCoreLocation(),
 });

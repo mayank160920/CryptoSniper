@@ -84,7 +84,7 @@ import {config, walletConfig} from './config/index'
 
 const Package = {
   name: 'open-sniper',
-  version: '1.0.0',
+  version: '1.0.2',
 }
 
 let settings: any
@@ -139,7 +139,7 @@ const chainSelection = () => {
 
 const preloadEthereum = () => {
   const spinner = ora({text: ('Connecting'), spinner: 'aesthetic'}).start()
-  validateSettings(settings).then(() => {
+  //validateSettings(settings).then(() => {
     initializeWeb3(chain).then(nodeList => {
       initializeEthereum(nodeList).then(() => {
         initializeHelper().then(() => {
@@ -160,17 +160,17 @@ const preloadEthereum = () => {
         return preloadEthereum()
       })
     })
-  }).catch(error => {
-    spinner.stop()
-    printErrorHeading('MISCONFIGURED SETTINGS')
-    printReason(error)
-    printLocation(getCoreLocation('nodeConfig.json'))
+  // }).catch(error => {
+  //   spinner.stop()
+  //   printErrorHeading('MISCONFIGURED SETTINGS')
+  //   printReason(error)
+  //   printLocation(getCoreLocation('nodeConfig.json'))
 
-    confirmReload().then(() => {
-      settings = walletConfig.store
-      return preloadEthereum()
-    })
-  })
+  //   confirmReload().then(() => {
+  //     settings = walletConfig.store
+  //     return preloadEthereum()
+  //   })
+  // })
 }
 
 const bootstrapExchange = () => {
@@ -306,6 +306,7 @@ const parseConfiguration = () => {
   printInfoLine('Transactions', chalk.bold(configs.amount) + ' ' + configs.amt_mode.toUpperCase() + ' * ' + chalk.bold(configs.iteration) + ' Iteration (' + chalk.bold(configs.gas_price === '0' ? 'Auto' : configs.gas_price) + ' / ' + chalk.bold(configs.priority_gas) + ' GWei)')
   printInfoLine('Honeypot Check', 'Enable ' + chalk.bold('' + configs.honeypot_check.charAt(0).toUpperCase() + configs.honeypot_check.slice(1).toLowerCase()) + ' / Block Severe Fee ' + chalk.bold('' + configs.block_severe_fee.charAt(0).toUpperCase() + configs.block_severe_fee.slice(1).toLowerCase()))
   printInfoLine('Sniper Swap Delay', 'Execution ' + chalk.bold(configs.delay_execution) + ' Sec / Iteration ' + chalk.bold(configs.delay_iteration) + ' Sec')
+  printInfoLine('Mempool Sniper Block Delay', chalk.bold(configs.mempool_block_delay) + ' Blocks')
   printInfoLine('After Sniper Swap', 'Rug Pull Check ' + chalk.bold('' + configs.rug_pull_check.charAt(0).toUpperCase() + configs.rug_pull_check.slice(1).toLowerCase()) + ' / Sell Mgn ' + chalk.bold('' + configs.sell_management.charAt(0).toUpperCase() + configs.sell_management.slice(1).toLowerCase()))
   return exchangeMenu()
   // }).catch(G => {
@@ -549,7 +550,7 @@ const telegramScanner = () => {
 }
 
 const manualInputAddress = () => {
-  printHeading('Manual Sniper')
+  printHeading('Instant Sniper')
 
   contractAddressInput('Token').then(async contractAddress => {
     // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
@@ -572,7 +573,7 @@ const mempoolInputAddress = () => {
   contractAddressInput('Token').then(async contractAddress => {
     // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
     if (contractAddress.length === 42) try {
-      await watchMempool(contractAddress).then(async () => {
+      await watchMempool(contractAddress, configs.mempool_block_delay).then(async () => {
         await executeSniperSwap(getUserAddress(settings.private_key), settings.private_key, contractAddress, configs, chain, exchange).then(() => {
           printTxnCompleted()
           confirmReload().then(() => bootstrapExchange())
