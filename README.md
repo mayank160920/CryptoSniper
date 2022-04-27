@@ -12,14 +12,11 @@ An open-source defi sniper.
         
 **open-sniper** is free to download. 
 
-This is a fork of defi-cli which was abandoned and removed from github.
-
-
 **Premium Services Now Available**
 
 While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
 
-We host shared and private nodes in our own datacenter and can get you setup with a personal VPS to run open-sniper. Reach out to @spacemonk88 on Telegram for pricing and availability.
+A premium version of open-sniper is available that utilizies our private nodes. Reach out to @spacemonk88 on Telegram for pricing and availability.
         
         
 <hr>
@@ -70,7 +67,6 @@ Open-Sniper is also scanned with multiple security products using GitHub Actions
 
 # Table of Contents
 <!-- toc -->
-* [Table of Contents](#table-of-contents)
 * [Installation](#installation)
 * [Quickstart](#quickstart)
 * [Supported Blockchains](#supported-blockchains)
