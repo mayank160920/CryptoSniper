@@ -17,6 +17,7 @@ export default class Config extends Command {
         'amt_mode',
         'amount',
         'slippage',
+        'mempool_block_delay',
         'iteration',
         'gas_price',
         'priority_gas',

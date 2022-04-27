@@ -20,6 +20,10 @@ E.g. If you were supposed to receive 1000 tokens from the swap, and have SLIPPAG
 
 It is highly recommended to keep this configured between 98 and 100.
 
+`mempool_block_delay`
+
+The number of blocks to wait after the addLiquidity transaction is detected.
+
 `iteration`
 
 Enter the number of iteration you wish to perform. Each iteration will weight the AMOUNT parameter. E.g. If you have 0.25 in AMOUNT, and 2 in ITERATION, open-sniper will perform 0.25 ETH x 2, totaling 0.5 ETH.

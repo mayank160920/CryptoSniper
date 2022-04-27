@@ -34,13 +34,13 @@ Our custom filtering and sensitivity system automatically determine if a message
 The Telegram Scanner can also filter contract address sent hidden in media file, and sent separated in parts (e.g. A + C), both single or multiple message.
 Messages from popular Telegram bots such as MissRose are automatically filtered out, so you don't have to worry that you buy from Scammers with CA in their names.
 
-### Mempool Sniper
+#### Mempool Sniper
 
 Mempool sniper listens for pending transactions on the chain and snipes as soon as the liquidity has been added.
 
-### Manual Input Address
+#### Instant Sniper
 
-In scenarios where you already have the contract address, you can set pending orders with Manual Input Address, and as soon as the liquidity has been added, or trading has been enabled, open-sniper will execute the transaction.
+In scenarios where you already have the contract address, you can immediately buy with Instant Sniper. Much faster than the terriable Uniswap UI.
 
 ## CoinMarketCap/CoinGecko Sniper
 ### Fastest Alerts Telegram

@@ -172,11 +172,11 @@ Messages from popular Telegram bots such as MissRose are automatically filtered 
 
 #### Mempool Sniper
 
-Mempool sniper listens for pending transactions on the chain and snipes as soon as the liquidity has been added.
+Mempool sniper listens for pending transactions and snipes as soon as the liquidity has been added.
 
-#### Manual Input Address
+#### Instant Sniper
 
-In scenarios where you already have the contract address, you can set pending orders with Manual Input Address, and as soon as the liquidity has been added, or trading has been enabled, open-sniper will execute the transaction.
+In scenarios where you already have the contract address, you can immediately buy with Instant Sniper. Much faster than the terriable Uniswap UI.
 
 ### CoinMarketCap/CoinGecko Sniper
 #### Fastest Alerts Telegram
@@ -240,6 +240,10 @@ Enter the BURN (not price movement) tolerance for your transaction.
 E.g. If you were supposed to receive 1000 tokens from the swap, and have SLIPPAGE configured at 75, minimally you must receive 250 tokens back, otherwise it will be rejected by the exchange router.
 
 It is highly recommended to keep this configured between 98 and 100.
+
+`mempool_block_delay`
+
+The number of blocks to wait after the addLiquidity transaction is detected.
 
 `iteration`
 
@@ -349,8 +353,8 @@ USAGE
   $ open-sniper config [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
-  KEY    (amt_mode|amount|slippage|iteration|gas_price|priority_gas|honeypot_check|block_severe_fee|delay_execution|dela
-         y_iteration|rug_pull_check|sell_management|telegram.api_id|telegram.api_hash)
+  KEY    (amt_mode|amount|slippage|mempool_block_delay|iteration|gas_price|priority_gas|honeypot_check|block_severe_fee|
+         delay_execution|delay_iteration|rug_pull_check|sell_management|telegram.api_id|telegram.api_hash)
   VALUE  value
 
 FLAGS
@@ -361,7 +365,7 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.2/dist/commands/config.ts)_
 
 ## `open-sniper help [COMMAND]`
 
@@ -404,7 +408,7 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.2/dist/commands/nodes.ts)_
 
 ## `open-sniper start`
 
@@ -421,7 +425,7 @@ EXAMPLES
   $ open-sniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.2/dist/commands/start.ts)_
 
 ## `open-sniper wallet [KEY] [VALUE]`
 
@@ -443,5 +447,5 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.0/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.2/dist/commands/wallet.ts)_
 <!-- commandsstop -->

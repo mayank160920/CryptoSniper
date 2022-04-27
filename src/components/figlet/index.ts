@@ -8,7 +8,7 @@ import {
 
 export const castFiglet = (G: any) => {
   return new Promise(resolve => {
-    figlet(G, {font: 'ANSI Regular'}, (J: any, l: any) => {
+    figlet(G, {font: 'Slant'}, (J: any, l: any) => {
       if (!J) return resolve(l || '')
       fileLogger.error('CORE: castFiglet(): ' + J)
       return somethingWentWrong()
