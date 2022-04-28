@@ -1,5 +1,3 @@
-![opensniper](https://user-images.githubusercontent.com/93244980/164549267-14c727fd-66e2-4aae-a3f3-4e6f2ce4a0fc.png)
-=================
 <div align="center">
       <p align="center">
 An open-source defi sniper.
