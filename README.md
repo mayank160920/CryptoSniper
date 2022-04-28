@@ -7,10 +7,9 @@ An open-source defi sniper.
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/earteaga88/open-sniper) [![Github All Releases](https://img.shields.io/github/downloads/earteaga88/open-sniper/total.svg)]() [![build](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/earteaga88/open-sniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
-![open-sniper](https://user-images.githubusercontent.com/93244980/164783285-de5d524d-66ef-44fb-b01e-e3a76ad27cec.png)
-
-        
 **open-sniper** is free to download. 
+
+**NEW** Community telegram group: https://t.me/opensniper
 
 **Premium Services Now Available**
 
@@ -18,42 +17,76 @@ While open-sniper is free and open-source, if you want the best results you need
 
 A premium version of open-sniper is available that utilizies our private nodes. Reach out to @spacemonk88 on Telegram for pricing and availability.
         
-        
-<hr>
+![open-sniper](https://user-images.githubusercontent.com/93244980/164783285-de5d524d-66ef-44fb-b01e-e3a76ad27cec.png)
 
-**Contributors**
-
-[![Contributors Display](https://badges.pufler.dev/contributors/earteaga88/open-sniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
-  
 </p>
 </div>
         <hr>
 
 
-**Donations**
+**Donation Address:** 0x7762b7aeaa3105dc63d98e860c8cdca02cb08065
 
-Reach out to https://t.me/spacemonk88 on Telegram.
-
-**Feature Requests** 
-
-Reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
-
-**Bugs**
-
-Please submit an issue to this repo and include as much information as possible.
-
-**Documenatation** 
-
-https://earteaga88.github.io/open-sniper/
 
 <hr>
 
-**Built With Security In Mind**
 
+**Documentation** 
+See the documentation site for detailed descriptions of all features and options.
 
-For transparency, binaries are built using GitHub Actions and published directly to a release. (See Actions tab at the top of this repo)
+https://earteaga88.github.io/open-sniper/
 
-This happens during the "Release" step of the builds. 
+# Table of Contents
+<!-- toc -->
+* [Supported Blockchains](#supported-blockchains)
+* [Features](#features)
+* [Security](#security)
+* [Installation](#installation)
+* [Quickstart](#quickstart)
+* [Settings](#settings)
+* [Commands](#commands)
+* [Feature Requests & Bugs](#feature-requests--bug-reporting)
+<!-- tocstop -->
+
+# Supported Blockchains
+* Ethereum
+* Binance Smart Chain
+* Polygon (Matic)
+* Fantom Opera
+* KCC
+* Avalanche
+
+#### Exchange Availability
+* Uniswap
+* SushiSwap
+* PancakeSwap
+* ApeSwap
+* QuickSwap
+* SpookySwap
+* SpiritSwap
+* KoffeeSwap
+* KuSwap
+* Trader Joe
+
+# Features
+* Telegram Sniper
+* Mempool Sniper
+* Instant Sniper
+* CoinMarketCap/CoinGecko Listing Sniper
+* PancakeSwap Prediction Bot
+* DxSale/PinkSale Presale Bot
+
+# Security
+
+**Transparent Builds**
+
+Open-sniper is the only bot with full transparency in mind. 
+
+Binaries are built using GitHub Actions and published directly to a release. This happens during the "Release" step of the builds. 
+
+See example here: https://github.com/earteaga88/open-sniper/runs/6201209436?check_suite_focus=true#step:9:1
+![release](https://user-images.githubusercontent.com/93244980/165802350-2dcc0278-fa64-4202-a40c-8597291b0381.png)
+
+**Code Scanning**
 
 Dependabot constantly monitors for out-of-date dependency packages.
 
@@ -61,19 +94,6 @@ Open-Sniper is also scanned with multiple security products using GitHub Actions
 * Snyk
 * OSSR
 * CodeQL
-
-
-<hr>
-
-# Table of Contents
-<!-- toc -->
-* [Installation](#installation)
-* [Quickstart](#quickstart)
-* [Supported Blockchains](#supported-blockchains)
-* [Features](#features)
-* [Settings](#settings)
-* [Commands](#commands)
-<!-- tocstop -->
 
 # Installation
 
@@ -138,68 +158,6 @@ Configure your wallet by using the CLI or by editing the ~/Documents/open-sniper
 Start open-sniper.
 
 `./open-sniper start`
-
-I'm actively working on adding more cli commands. See the full list here: [Commands](#commands)
-
-# Supported Blockchains
-
-* Ethereum
-* Binance Smart Chain
-* Polygon (Matic)
-* Fantom Opera
-* KCC
-* Avalanche
-
-# Features
-### Fair Launch Sniping Tools
-#### Availability
-* Uniswap
-* SushiSwap
-* PancakeSwap
-* ApeSwap
-* QuickSwap
-* SpookySwap
-* SpiritSwap
-* KoffeeSwap
-* KuSwap
-* Trader Joe
-
-#### Telegram Scanner
-Listens and scans for new messages within the targeted Telegram group or channel for contract address, and automatically execute transaction as soon as a match is detected.
-Our custom filtering and sensitivity system automatically determine if a message sent is a contract address; whether if it is sent as swap link, or the contract address itself.
-The Telegram Scanner can also filter contract address sent hidden in media file, and sent separated in parts (e.g. A + C), both single or multiple message.
-Messages from popular Telegram bots such as MissRose are automatically filtered out, so you don't have to worry that you buy from Scammers with CA in their names.
-
-#### Mempool Sniper
-
-Mempool sniper listens for pending transactions and snipes as soon as the liquidity has been added.
-
-#### Instant Sniper
-
-In scenarios where you already have the contract address, you can immediately buy with Instant Sniper. Much faster than the terriable Uniswap UI.
-
-### CoinMarketCap/CoinGecko Sniper
-#### Fastest Alerts Telegram
-
-Snipe listings as soon as it is posted to the CoinMarketCap or CoinGecko Fastest Alerts Telegram channel.
-This works as a continuous loop, and it will only snipe listings with Red Circled (received insider info) and with BNB as its primary liquidity.
-You can also configure the minimum and maximum liquidity/tax for the snipe, so you won't be buying into something with already 1500 BNB in liquidity, and hoping for a 2x.
-All the standard transactional configuration will be used, except for the RUG_PULL_CHECK and SELL_MANAGEMENT option.
-
-### Prediction Bot
-
-The Prediction of PancakeSwap and Candle Genie is a gambling ecosystem by predicting the price of BTC/USDT, BNB/USDT, or ETH/USDT will be bullish (up) or bearish (down) in the next 5 minutes.
-
-There are 3 betting strategies available in Prediction Bot:
-
-- Only Streak Bets - This will wait for a consecutive result of the previous 2 rounds, then continue betting the same result until the streak is broken.
-- Standard + Streak Bets - This will use a methodology to calculate the mathematical expectation and bet strategically, combined with, and prioritizing the streak strategy.
-- SS + Martingale Strategy - This will include martingale betting strategy with Standard + Streak Bets. This strategy will double up the bet amount on every lost bet, and only reset itself on a win.
-
-### DxSale/PinkSale Presale Bot
-
-Snipe listings on both DxSale and PinkSale.
-
 
 # Settings
 
@@ -449,3 +407,14 @@ DESCRIPTION
 
 _See code: [dist/commands/wallet.ts](https://github.com/earteaga88/open-sniper/blob/v1.0.2/dist/commands/wallet.ts)_
 <!-- commandsstop -->
+<hr>
+
+# Feature Requests & Bug Reporting
+
+Please submit an issue to this repo and include as much information as possible. For feature requests, also reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
+
+<hr>
+
+**Contributors**
+
+[![Contributors Display](https://badges.pufler.dev/contributors/earteaga88/open-sniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
