@@ -143,7 +143,7 @@ Option 2:
 
 You should now be able to run open-sniper.
 
-**Note:** VirusTotal is giving false positives on the Windows binary. THIS IS A FALSE POSITIVE and known issue with the 'pkg' npm package used to compile the code. See vercel/pkg#1540.
+**Note:** ~~VirusTotal is giving false positives on the Windows binary. THIS IS A FALSE POSITIVE and known issue with the 'pkg' npm package used to compile the code. See vercel/pkg#1540.~~ It seems VirusTotal is no longer reporting problems with pkg. https://www.virustotal.com/gui/file/b02a7205040b82b75e7eecf5a84b3aea357288f2138e011f3db797f728e085b6/detection
 
 # Quickstart
 
