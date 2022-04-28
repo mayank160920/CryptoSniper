@@ -131,7 +131,12 @@ https://github.com/earteaga88/open-sniper/releases/latest/download/open-sniper-w
 
 After downloading, you can optionally rename it from "open-sniper-win-64" to open-sniper. It will work either way.
 
-**If you get a message that open-sniper was blocked by Windows:**
+**If you get a message that open-sniper was blocked by SmartScreen/Defender:**
+Option 1:
+- Click "More Info"
+- Click the "Run anyway" button.
+
+Option 2:
 - Right click on open-sniper and go to properties
 - Check the box that says "unblock" and click OK.
 
