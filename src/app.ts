@@ -84,7 +84,7 @@ import {config, walletConfig} from './config/index'
 
 const Package = {
   name: 'open-sniper',
-  version: '1.0.2',
+  version: '1.1.0',
 }
 
 let settings: any
