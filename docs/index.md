@@ -9,6 +9,7 @@
 ## Supported Blockchains
 
 * Ethereum
+* Cronos
 * Binance Smart Chain
 * Polygon (Matic)
 * Fantom Opera
@@ -19,6 +20,7 @@
 ### Availability
 * Uniswap
 * SushiSwap
+* Mad Meerkat Finance
 * PancakeSwap
 * ApeSwap
 * QuickSwap
@@ -28,12 +30,6 @@
 * KuSwap
 * Trader Joe
 
-### Telegram Scanner
-Listens and scans for new messages within the targeted Telegram group or channel for contract address, and automatically execute transaction as soon as a match is detected.
-Our custom filtering and sensitivity system automatically determine if a message sent is a contract address; whether if it is sent as swap link, or the contract address itself.
-The Telegram Scanner can also filter contract address sent hidden in media file, and sent separated in parts (e.g. A + C), both single or multiple message.
-Messages from popular Telegram bots such as MissRose are automatically filtered out, so you don't have to worry that you buy from Scammers with CA in their names.
-
 #### Mempool Sniper
 
 Mempool sniper listens for pending transactions on the chain and snipes as soon as the liquidity has been added.
@@ -41,6 +37,12 @@ Mempool sniper listens for pending transactions on the chain and snipes as soon 
 #### Instant Sniper
 
 In scenarios where you already have the contract address, you can immediately buy with Instant Sniper. Much faster than the terriable Uniswap UI.
+
+#### Telegram Scanner
+Listens and scans for new messages within the targeted Telegram group or channel for contract address, and automatically execute transaction as soon as a match is detected.
+Our custom filtering and sensitivity system automatically determine if a message sent is a contract address; whether if it is sent as swap link, or the contract address itself.
+The Telegram Scanner can also filter contract address sent hidden in media file, and sent separated in parts (e.g. A + C), both single or multiple message.
+Messages from popular Telegram bots such as MissRose are automatically filtered out, so you don't have to worry that you buy from Scammers with CA in their names.
 
 ## CoinMarketCap/CoinGecko Sniper
 ### Fastest Alerts Telegram

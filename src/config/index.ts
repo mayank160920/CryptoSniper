@@ -122,6 +122,20 @@ const nodeSchema = {
       },
     },
   },
+  cro: {
+    type: 'object',
+    default: {},
+    properties: {
+      websockets: {
+        type: 'string',
+        default: 'https://evm-cronos.crypto.org',
+      },
+      rpc: {
+        type: 'string',
+        default: 'https://evm-cronos.crypto.org',
+      },
+    },
+  },
   bsc: {
     type: 'object',
     default: {},

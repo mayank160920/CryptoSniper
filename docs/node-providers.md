@@ -1,6 +1,6 @@
 # Node Providers
 
-Check https://github.com/arddluma/awesome-list-rpc-nodes-providers/blob/main/README.md for up to date versions.
+Check https://github.com/arddluma/awesome-list-rpc-nodes-providers/blob/main/README.md for an up to date version of the list.
 
 Here you will find a list of PUBLIC RPC endpoints and Node providers for
 most of the Networks such as Ethereum, BSC, Polygon, Gnosis, Fantom, Avalanche
@@ -27,6 +27,8 @@ etc.
 - [Celo](#celo)
 - [Near](#near)
 - [Aurora](#aurora)
+- [TomoChain](#tomochain)
+- [Moonriver](#moonriver)
 
 ## MultiChain
 
@@ -64,6 +66,19 @@ constantly growing, and the full list is available
 
 Checkout: [https://pokt.network](https://pokt.network)
 
+### Quicknode
+
+Quicknode is a multi-chain Web3 provider that connects application developers with a
+decentralized network of worldwide running endpoints. Application developers can create
+an endpoint and start working within minutes- for any of the actively supported chains.
+
+Quicknode currently supports RPC access to Ethereum, Solana, Avalanche, Polygon, Celo, Fantom, Optimism,
+BSC, Gnosis, Algorand to name a few. The list of supported chains is
+constantly growing, and the full list is available
+[here](https://www.quicknode.com/pricing).
+
+Checkout: [https://www.quicknode.com](https://www.quicknode.com)
+
 ## Ethereum
 
 **Providers:**
@@ -73,13 +88,14 @@ Checkout: [https://pokt.network](https://pokt.network)
 3. QuickNode - [https://www.quicknode.com](https://www.quicknode.com)
 4. 0x - [https://0x.org](https://0x.org)
 5. Amazon Managed Blockchain - [https://aws.amazon.com/managed-blockchain](https://aws.amazon.com/managed-blockchain)
-6. Moralis - [https://moralis.io](https://aws.amazon.com/managed-blockchain)
+6. Moralis - [https://moralis.io](https://moralis.io/)
 7. Pocket Network - [https://mainnet.portal.pokt.network](https://mainnet.portal.pokt.network)
 8. Chainstack - [https://chainstack.com/build-better-with-ethereum/](https://chainstack.com/build-better-with-ethereum/)
 9. ZMOK - [https://zmok.io/](https://zmok.io/)
 10. AllNodes - [https://www.allnodes.com](https://www.allnodes.com)
 11. Figment Datahub - [https://datahub.figment.io/](https://datahub.figment.io/)
 12. Ankr - [https://ankr.com](https://ankr.com)
+13. ArchiveNode - [https://archivenode.io/](https://archivenode.io/)
 
 **Public Endpoints:**
 
@@ -92,17 +108,22 @@ Checkout: [https://pokt.network](https://pokt.network)
 - [https://ethereumnodelight.app.runonflux.io](https://ethereumnodelight.app.runonflux.io)
 - [https://rpc.flashbots.net/](https://rpc.flashbots.net/)
 - [https://rpc.ankr.com/eth](https://rpc.ankr.com/eth)
+- [https://mainnet.eth.cloud.ava.do/](https://mainnet.eth.cloud.ava.do/)
 
 **Spin up your own node:**
 
 - [https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/](https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/)
+- [https://www.quicknode.com/guides/infrastructure/how-to-run-a-openethereum-ex-parity-client-node]
+- https://www.quicknode.com/guides/infrastructure/how-to-run-a-hyperledger-besu-node 
+- https://www.quicknode.com/guides/infrastructure/how-to-install-and-run-a-geth-node 
+
 
 ## BSC
 
 **Providers:**
 
 1. ANKR - [https://ankr.com](https://ankr.com)
-2. Chainstack - [https://chainstack.com](https://chainstack.com)
+2. Chainstack - [https://chainstack.com/build-better-with-binance-smart-chain/](https://chainstack.com/build-better-with-binance-smart-chain/)
 3. GetBlock - [https://getblock.io](https://getblock.io)
 4. QuickNode - [https://www.quicknode.com](https://www.quicknode.com)
 5. Moralis - [https://moralis.io](https://moralis.io)
@@ -115,7 +136,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 - [https://bsc-dataseed.binance.org](https://bsc-dataseed.binance.org)
 - [https://bsc-dataseed1.defibit.io](https://bsc-dataseed1.defibit.io)
 - [https://bsc-dataseed1.ninicoin.io](https://bsc-dataseed1.ninicoin.io)
-- [https://bscrpc.com](https://bscrpc.com) 
+- [https://bscrpc.com](https://bscrpc.com)
 - [https://rpc.ankr.com/bsc](https://rpc.ankr.com/bsc)
 - [https://bsc.rpcgator.com/](https://bsc.rpcgator.com/) - RPC Agreggator / Gateway
 
@@ -134,6 +155,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 1. Chainstack - [https://chainstack.com/build-better-with-solana/](https://chainstack.com/build-better-with-solana/)
 2. Pocket Network - [https://mainnet.portal.pokt.network](https://mainnet.portal.pokt.network)
 3. Figment Datahub - [https://datahub.figment.io/](https://datahub.figment.io/)
+4. Quicknode - [https://www.quicknode.com/](https://www.quicknode.com/)
 
 **Public Endpoints:**
 
@@ -155,13 +177,14 @@ Checkout: [https://pokt.network](https://pokt.network)
 4. All Nodes - [https://www.allnodes.com](https://www.allnodes.com)
 5. Figment Datahub - [https://datahub.figment.io/](https://datahub.figment.io/)
 6. Ankr - [https://ankr.com](https://ankr.com)
-
+7. Quicknode - [https://www.quicknode.com/](https://www.quicknode.com/)
 
 **Public Endpoints:**
 
 - [https://api.avax.network/ext/bc/C/rpc](https://api.avax.network/ext/bc/C/rpc)
 - [https://rpc.ankr.com/avalanche](https://rpc.ankr.com/avalanche)
 - [https://avax.rpcgator.com/](https://avax.rpcgator.com/) - RPC Agreggator / Gateway
+- [https://avalanche.public-rpc.com](https://avalanche.public-rpc.com)
 
 **Spin up your own node:**
 
@@ -173,16 +196,14 @@ Checkout: [https://pokt.network](https://pokt.network)
 
 1. Infura.io - [https://infura.io](https://infura.io)
 2. MaticVigil - [https://maticvigil.com](https://maticvigil.com)
-3. Chainstack - [https://chainstack.com](https://chainstack.com)
+3. Chainstack - [https://chainstack.com](https://chainstack.com/build-better-with-polygon/)
 4. ANKR - [https://ankr.com](https://ankr.com)
 5. QuickNode - [https://www.quicknode.com](https://www.quicknode.com)
 6. Moralis - [https://moralis.io](https://moralis.io)
 7. Pocket Network - [https://mainnet.portal.pokt.network](https://mainnet.portal.pokt.network)
-8. Chainstack - [https://chainstack.com/build-better-with-polygon/](https://chainstack.com/build-better-with-polygon/)
-9. AllNodes - [https://www.allnodes.com](https://www.allnodes.com)
-10. Figment Datahub - [https://datahub.figment.io/](https://datahub.figment.io/)
-11. Ankr - [https://ankr.com](https://ankr.com)
-
+8. AllNodes - [https://www.allnodes.com](https://www.allnodes.com)
+9. Figment Datahub - [https://datahub.figment.io/](https://datahub.figment.io/)
+10. Ankr - [https://ankr.com](https://ankr.com)
 
 **Public Endpoints:**
 
@@ -212,6 +233,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 **Providers**:
 
 1. Pocket Network - [https://mainnet.portal.pokt.network](https://mainnet.portal.pokt.network)
+2. Quicknode - [https://www.quicknode.com/](https://www.quicknode.com/)
 
 **Spin up your own node:**
 
@@ -231,7 +253,6 @@ Checkout: [https://pokt.network](https://pokt.network)
 - [https://rpc.ftm.tools/](https://rpc.ftm.tools/)
 - [https://rpc.ankr.com/fantom](https://rpc.ankr.com/fantom)
 - [https://ftm.rpcgator.com/](https://ftm.rpcgator.com/) - RPC Agreggator / Gateway
-
 
 **WebSocket:**
 
@@ -261,15 +282,19 @@ Checkout: [https://pokt.network](https://pokt.network)
 **Providers:**
 
 1. Pocket Network - [https://mainnet.portal.pokt.network](https://mainnet.portal.pokt.network)
+2. Chainstack - [https://chainstack.com/build-better-with-harmony/](https://chainstack.com/build-better-with-harmony/)
 
 **Public Endpoints:**
 
 - [https://harmony-0-rpc.gateway.pokt.network](https://harmony-0-rpc.gateway.pokt.network)
 - [https://api.harmony.one](https://api.harmony.one)
+- [https://harmony.public-rpc.com](https://harmony.public-rpc.com)
+- [https://harmony-mainnet.chainstacklabs.com](https://harmony-mainnet.chainstacklabs.com)
 
 **WebSocket:**
 
 - `wss://ws.s0.t.hmny.io`
+- `wss://ws-harmony-mainnet.chainstacklabs.com`
 
 **Spin up your own node:**
 
@@ -296,6 +321,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 
 - [https://iotex-mainnet.gateway.pokt.network/v1/lb/6176f902e19001003499f492](https://iotex-mainnet.gateway.pokt.network/v1/lb/6176f902e19001003499f492)
 - [https://rpc.ankr.com/iotex](https://rpc.ankr.com/iotex)
+- [https://iotexrpc.com](https://iotexrpc.com)
 
 **Spin up your own node:**
 
@@ -316,6 +342,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 - [https://rpc.xdaichain.com](https://rpc.xdaichain.com)
 - [https://xdai.poanetwork.dev](https://xdai.poanetwork.dev)
 - [https://xdai-rpc.gateway.pokt.network](https://xdai-rpc.gateway.pokt.network)
+- [https://gnosis.public-rpc.com](https://gnosis.public-rpc.com)
 
 **WebSocket:**
 
@@ -365,6 +392,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 
 - [https://arb1.arbitrum.io/rpc](https://arb1.arbitrum.io/rpc)
 - [https://rpc.ankr.com/arbitrum](https://rpc.ankr.com/arbitrum)
+- [https://arbitrum.public-rpc.com](https://arbitrum.public-rpc.com)
 
 ## Celo
 
@@ -372,7 +400,6 @@ Checkout: [https://pokt.network](https://pokt.network)
 
 1. ANKR - [https://ankr.com](https://ankr.com)
 2. QuickNode - [https://www.quicknode.com/](https://www.quicknode.com/)
-
 
 **Public Endpoints:**
 
@@ -383,7 +410,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 
 - [https://docs.celo.org/getting-started/mainnet/running-a-full-node-in-mainnet](https://docs.celo.org/getting-started/mainnet/running-a-full-node-in-mainnet)
 
-## Near 
+## Near
 
 **Providers:**
 
@@ -392,6 +419,7 @@ Checkout: [https://pokt.network](https://pokt.network)
 **Public Endpoints:**
 
 - [https://rpc.ankr.com/near](https://rpc.ankr.com/near)
+- [https://near.public-rpc.com](https://near.public-rpc.com)
 
 **Spin up your own node:**
 
@@ -406,3 +434,31 @@ Checkout: [https://pokt.network](https://pokt.network)
 **Spin up your own node:**
 
 - [https://doc.aurora.dev/#running-your-own-aurora-node](https://doc.aurora.dev/#running-your-own-aurora-node)
+
+## TomoChain
+
+**Public Endpoints:**
+
+- [https://rpc.tomochain.com](https://rpc.tomochain.com)
+
+**Websocket:**
+
+- `wss://ws.tomochain.com`
+
+**Spin up your own node:**
+
+- [https://docs.tomochain.com/masternode-and-dex/masternode](https://docs.tomochain.com/masternode-and-dex/masternode)
+
+## Moonriver
+
+**Public Endpoints:**
+
+- [https://rpc.api.moonriver.moonbeam.network](https://rpc.api.moonriver.moonbeam.network)
+
+**Websocket:**
+
+- `wss://wss.api.moonriver.moonbeam.network`
+
+**Spin up your own node:**
+
+- [https://docs.moonbeam.network/node-operators/networks/run-a-node/](https://docs.moonbeam.network/node-operators/networks/run-a-node/)

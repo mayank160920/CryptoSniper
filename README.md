@@ -47,6 +47,7 @@ https://earteaga88.github.io/open-sniper/
 
 # Supported Blockchains
 * Ethereum
+* Cronos
 * Binance Smart Chain
 * Polygon (Matic)
 * Fantom Opera
@@ -56,6 +57,7 @@ https://earteaga88.github.io/open-sniper/
 #### Exchange Availability
 * Uniswap
 * SushiSwap
+* Mad Meerkat Finance
 * PancakeSwap
 * ApeSwap
 * QuickSwap

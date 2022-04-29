@@ -260,6 +260,10 @@ const parseChainDetails = async () => {
     chainName = 'Rinkeby Test Network'
     break
 
+  case 25:
+    chainName = 'Cronos Mainnet'
+    break
+
   case 56:
     chainName = 'Binance Smart Chain'
     break
