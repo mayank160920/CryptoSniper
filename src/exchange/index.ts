@@ -83,6 +83,13 @@ export const initializeExchange = (chain: any, exchange: any) => {
       usd = '0xA6Cc591f2Fd8784DD789De34Ae7307d223Ca3dDc'
       break
 
+    case 25:
+      symbol = 'CRO'
+      native = '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23'
+      usd = '0x66e428c3f67a68878562e79A0234c1F83c208770'
+      if (exchange === 'LAUNCH') exchange = 'MMF'
+      break
+
     case 56:
       symbol = 'BNB'
       native = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
@@ -186,6 +193,12 @@ export const initializeExchange = (chain: any, exchange: any) => {
     case 'TRADER':
       contract = {
         router: new web3.eth.Contract([getAmountsOut_abi, swapExactAVAXForTokens_abi, swapExactTokensForAVAXSupportingFeeOnTransferTokens_abi], '0x60aE616a2155Ee3d9A68541Ba4544862310933d4'),
+      }
+      break
+
+    case 'MMF':
+      contract = {
+        router: new web3.eth.Contract(uniswapRouterAbi, '0x145677FC4d9b8F19B5D56d1820c48e0443049a30'),
       }
       break
 

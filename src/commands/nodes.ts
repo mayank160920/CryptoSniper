@@ -18,6 +18,8 @@ export default class NodeConfig extends Command {
         'eth.rpc',
         'eth_rinkeby.websockets',
         'eth_rinkeby.rpc',
+        'cro.websockets',
+        'cro.rpc',
         'bsc.websockets',
         'bsc.rpc',
         'matic.websockets',

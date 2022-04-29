@@ -35,6 +35,11 @@ export const initializeWeb3 = (chain: any) => {
       secondaryNode = new Web3(new Web3.providers.HttpProvider(nodeConfig.get('eth_rinkeby.rpc'), rpcConfig))
       break
 
+    case 25:
+      primaryNode = buildWeb3Connection(nodeConfig.get('cro.websockets'), wsConfig, rpcConfig)
+      secondaryNode = new Web3(new Web3.providers.HttpProvider(nodeConfig.get('cro.rpc'), rpcConfig))
+      break
+
     case 56:
       primaryNode = new Web3(new Web3.providers.WebsocketProvider(nodeConfig.get('bsc.websockets'), wsConfig))
       secondaryNode = new Web3(new Web3.providers.HttpProvider(nodeConfig.get('bsc.rpc'), rpcConfig))

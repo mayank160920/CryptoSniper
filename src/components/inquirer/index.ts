@@ -39,6 +39,9 @@ export const chainSelectionChoices = () => {
       //  name: 'Ethereum Rinkeby',
       //  value: 4,
       // }, {
+        name: 'Cronos Mainnet',
+        value: 25,
+      }, {
         name: 'Binance Smart Chain',
         value: 56,
       }, {
@@ -85,6 +88,13 @@ export const exchangeSelection = (chain: any) => {
         name: 'Uniswap',
         value: 'UNI',
       }, new inquirer.Separator(), previousMenu, quitCli]
+      break
+
+    case 25:
+      l = [{
+        name: 'Mad Meerkat Finance',
+        value: 'MMF',
+      }, J, new inquirer.Separator(), previousMenu, quitCli]
       break
 
     case 56:
@@ -180,6 +190,13 @@ export const exchangeMenuSelection = (exchange: any) => {
       break
 
     case 'SUSHI':
+      choices = [{
+        name: 'Fair Launch Sniping Tools',
+        value: 10,
+      }, new inquirer.Separator(), reload, latencyTests, switchExchange, quitCli]
+      break
+
+    case 'MMF':
       choices = [{
         name: 'Fair Launch Sniping Tools',
         value: 10,
