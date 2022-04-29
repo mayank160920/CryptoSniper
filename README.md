@@ -14,9 +14,9 @@ An open-source defi sniper.
 While open-sniper is free and open-source, if you want the best results you need access to the fastest RPC nodes available. 
 
 A premium version of open-sniper is available that utilizies our private nodes. Reach out to @spacemonk88 on Telegram for pricing and availability.
-        
-![open-sniper](https://user-images.githubusercontent.com/93244980/164783285-de5d524d-66ef-44fb-b01e-e3a76ad27cec.png)
 
+![opensniper1-1](https://user-images.githubusercontent.com/93244980/166065135-957b4924-5c8d-4621-95a8-7e5872eae072.png)
+     
 </p>
 </div>
         <hr>
