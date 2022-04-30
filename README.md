@@ -31,7 +31,7 @@ A premium version of open-sniper is available that utilizies our private nodes. 
 **Documentation** 
 See the documentation site for detailed descriptions of all features and options.
 
-https://earteaga88.github.io/open-sniper/
+https://earteaga88.github.io/defi-sniper/
 
 # Table of Contents
 <!-- toc -->
