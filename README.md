@@ -7,7 +7,7 @@ An open-source defi sniper.
 
 **defi-sniper** is free to download. 
 
-**NEW** Community telegram group: https://t.me/opensniper
+**NEW** Community telegram group: https://t.me/+aBLUmP1UnypiNTVh
 
 **Premium Services Now Available**
 
