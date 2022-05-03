@@ -45,7 +45,7 @@
     "@types/chai": "^4",
     "@types/conf": "^3.0.0",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.11.27",
+    "@types/node": "^16.11.33",
     "@types/systeminformation": "^3.54.1",
     "abi-decoder": "^2.4.0",
     "bn.js": "^5.2.0",
