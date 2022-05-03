@@ -15,8 +15,9 @@ While defi-sniper is free and open-source, if you want the best results you need
 
 A premium version of defi-sniper is available that utilizies our private nodes. Reach out to @spacemonk88 on Telegram for pricing and availability.
 
-![opensniper1-1](https://user-images.githubusercontent.com/93244980/166065135-957b4924-5c8d-4621-95a8-7e5872eae072.png)
-     
+![defi-sniper](https://user-images.githubusercontent.com/93244980/166409860-94ee8e71-933c-46d3-b1ca-6564f16d37ca.png)
+
+        
 </p>
 </div>
         <hr>
