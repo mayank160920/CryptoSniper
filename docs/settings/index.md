@@ -1,6 +1,6 @@
 # Settings
 
-A open-sniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
+A defi-sniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
 
 * config.json
 * nodeConfig.json
@@ -9,9 +9,9 @@ A open-sniper-configs folder will be created in your Documents. Inside you will 
 
 ## Telegram
 
-The telegram.json file is located in the open-sniper-configs folder in your Documents.
+The telegram.json file is located in the defi-sniper-configs folder in your Documents.
 
-In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, open-sniper needs to log in to your Telegram account.
+In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, defi-sniper needs to log in to your Telegram account.
 
 To do so, you would need to provide API parameters of your account. Follow these steps:
 

@@ -32,9 +32,9 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: |
-          pkg/open-sniper-linux-arm64
-          pkg/open-sniper-linux-x64
-          pkg/open-sniper-macos-arm64
-          pkg/open-sniper-macos-x64
-          pkg/open-sniper-win-x64.exe
+          pkg/defi-sniper-linux-arm64
+          pkg/defi-sniper-linux-x64
+          pkg/defi-sniper-macos-arm64
+          pkg/defi-sniper-macos-x64
+          pkg/defi-sniper-win-x64.exe
           
