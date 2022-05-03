@@ -8,58 +8,58 @@
 
 ## Installation
 
-Binaries are built using GitHub Actions and are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [![releases page](https://github.com/earteaga88/open-sniper/releases/)](https://github.com/earteaga88/open-sniper/releases/) for the latest version.
+Binaries are built using GitHub Actions and are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [![releases page](https://github.com/earteaga88/defi-sniper/releases/)](https://github.com/earteaga88/defi-sniper/releases/) for the latest version.
 
 ### Linux
 
 Open Terminal.
 
-`curl -L https://github.com/earteaga88/open-sniper/releases/latest/download/open-sniper-linux-x64 -o open-sniper`
+`curl -L https://github.com/earteaga88/defi-sniper/releases/latest/download/defi-sniper-linux-x64 -o defi-sniper`
 
-`chmod +x open-sniper`
+`chmod +x defi-sniper`
 
 ### macOS
 
 Open Terminal.
 
-`curl -L https://github.com/earteaga88/open-sniper/releases/latest/download/open-sniper-macos-x64 -o open-sniper`
+`curl -L https://github.com/earteaga88/defi-sniper/releases/latest/download/defi-sniper-macos-x64 -o defi-sniper`
 
-`chmod +x open-sniper`
+`chmod +x defi-sniper`
 
-If you try to run `./open-sniper` at this point, you will get a message that macOS has blocked it.
+If you try to run `./defi-sniper` at this point, you will get a message that macOS has blocked it.
 
 To fix that, go to System Preferences and click Security & Privacy. Click the Open Anyway button in the General pane.
 
 <img src="https://user-images.githubusercontent.com/100382691/156895989-cee7cc92-6c79-4c8d-81d6-f561d3e63df9.png" width="500">
 
-Now you should be able to execute `./open-sniper` in your Terminal.
+Now you should be able to execute `./defi-sniper` in your Terminal.
 
 ### Windows
 
 Download the latest Windows release.
 
-https://github.com/earteaga88/open-sniper/releases/latest/download/open-sniper-win-x64.exe
+https://github.com/earteaga88/defi-sniper/releases/latest/download/defi-sniper-win-x64.exe
 
-After downloading, you can optionally rename it from "open-sniper-win-64" to open-sniper. It will work either way.
+After downloading, you can optionally rename it from "defi-sniper-win-64" to defi-sniper. It will work either way.
 
 ## Quickstart
 
 ### Interactive Mode
 
-Simply running open-sniper by double clicking will start it in interactive mode.
+Simply running defi-sniper by double clicking will start it in interactive mode.
 
 ### CLI Mode
 
-In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where you downloaded open-sniper.
+In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where you downloaded defi-sniper.
 
 ` cd ~/Downloads`
 
-Configure your wallet by using the CLI or by editing the ~/Documents/open-sniper-cofigs/wallets.json file.
+Configure your wallet by using the CLI or by editing the ~/Documents/defi-sniper-cofigs/wallets.json file.
 
-`./open-sniper wallet private_key [paste key]`
+`./defi-sniper wallet private_key [paste key]`
 
-Start open-sniper.
+Start defi-sniper.
 
-`./open-sniper start`
+`./defi-sniper start`
 
 I'm actively working on adding more cli commands. See the full list here: [Commands](#commands)

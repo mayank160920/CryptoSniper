@@ -83,8 +83,8 @@ import {
 import {config, walletConfig} from './config/index'
 
 const Package = {
-  name: 'open-sniper',
-  version: '1.1.0',
+  name: 'defi-sniper',
+  version: '1.1.1',
 }
 
 let settings: any
@@ -99,10 +99,10 @@ export async function start() {
     printMainHeader(G, Package.version)
     printErrorHeading('DISCLAIMER')
     console.log('All investment strategies and investments involve risk of loss.')
-    console.log('By using open-sniper, you agree to accept all liabilities, and that')
+    console.log('By using defi-sniper, you agree to accept all liabilities, and that')
     console.log('no claims can be made against the developers.')
-    console.log('\nopen-sniper is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download open-sniper, you have been ' + chalk.red('SCAMMED') + '!')
+    console.log('\ndefi-sniper is ' + chalk.yellow('FREE') + ' to download.')
+    console.log('If you paid someone to download defi-sniper, you have been ' + chalk.red('SCAMMED') + '!')
 
     agreeDisclaimer().then(() => {
       initializeFiles()

@@ -4,8 +4,8 @@ import * as path from 'path';
 //import { cpu, mem, osInfo, system } from "systeminformation";
 
 const getCoreLocation = (G: any) => {
-  if (G) return path.join(homedir(), 'Documents', 'open-sniper-configs', G);
-  return path.join(homedir(), 'Documents', 'open-sniper-configs');
+  if (G) return path.join(homedir(), 'Documents', 'defi-sniper-configs', G);
+  return path.join(homedir(), 'Documents', 'defi-sniper-configs');
 };
 
 const configSchema = {

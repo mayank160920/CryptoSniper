@@ -1,15 +1,15 @@
 {
-  "name": "open-sniper",
-  "version": "1.1.0",
-  "description": "open-sniper toolkit",
+  "name": "defi-sniper",
+  "version": "1.1.1",
+  "description": "defi-sniper toolkit",
   "author": "earteaga88",
   "bin": {
-    "open-sniper": "./bin/run"
+    "defi-sniper": "./bin/run"
   },
-  "homepage": "https://github.com/earteaga88/open-sniper",
+  "homepage": "https://github.com/earteaga88/defi-sniper",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "earteaga88/open-sniper",
+  "repository": "earteaga88/defi-sniper",
   "files": [
     "/bin",
     "/dist",
@@ -73,8 +73,8 @@
     "winston-daily-rotate-file": "^4.5.5"
   },
   "oclif": {
-    "bin": "open-sniper",
-    "dirname": "open-sniper",
+    "bin": "defi-sniper",
+    "dirname": "defi-sniper",
     "commands": "./dist/commands",
     "default": "start",
     "plugins": [
@@ -99,7 +99,7 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/earteaga88/open-sniper/issues",
+  "bugs": "https://github.com/earteaga88/defi-sniper/issues",
   "keywords": [
     "oclif"
   ],
