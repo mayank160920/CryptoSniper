@@ -9,15 +9,15 @@ import {
 } from '../helper/index'
 
 export const getCoreLocation = (G: any) => {
-  if (G) return path.join(homedir(), 'Documents', 'defi-sniper-configs', G)
-  return path.join(homedir(), 'Documents', 'defi-sniper-configs')
+  if (G) return path.join(homedir(), 'Documents', 'crypto-sniper-configs', G)
+  return path.join(homedir(), 'Documents', 'crypto-sniper-configs')
 }
 
-export const validateSettings = (G: any) => {
+export const validateSettings = (settings: any) => {
   return new Promise((resolve, reject) => {
     //const l = G.EVM_NODE.toUpperCase();
     //if (!['GA', 'SG'].includes(l) && !l.startsWith('HTTPS') && !l.startsWith('WSS')) return reject('Unsupported EVM Endpoint');
-    if (G.private_key.length !== 64) return reject('Invalid Private Key')
+    if (!settings.private_key) return reject('Private Key not set! Run command or manually edit wallets.json.')
     // @ts-expect-error ts-migrate(2794) FIXME: Expected 1 arguments, but got 0. Did you forget to... Remove this comment to see the full error message
     return resolve()
   })

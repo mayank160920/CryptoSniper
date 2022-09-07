@@ -83,8 +83,8 @@ import {
 import {config, walletConfig} from './config/index'
 
 const Package = {
-  name: 'defi-sniper',
-  version: '1.1.1',
+  name: 'crypto-sniper',
+  version: '1.1.2',
 }
 
 let settings: any
@@ -99,10 +99,10 @@ export async function start() {
     printMainHeader(G, Package.version)
     printErrorHeading('DISCLAIMER')
     console.log('All investment strategies and investments involve risk of loss.')
-    console.log('By using defi-sniper, you agree to accept all liabilities, and that')
+    console.log('By using crypto-sniper, you agree to accept all liabilities, and that')
     console.log('no claims can be made against the developers.')
     console.log('\ndefi-sniper is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download defi-sniper, you have been ' + chalk.red('SCAMMED') + '!')
+    console.log('If you paid someone to download crypto-sniper, you have been ' + chalk.red('SCAMMED') + '!')
 
     agreeDisclaimer().then(() => {
       initializeFiles()
@@ -139,7 +139,7 @@ const chainSelection = () => {
 
 const preloadEthereum = () => {
   const spinner = ora({text: ('Connecting'), spinner: 'aesthetic'}).start()
-  //validateSettings(settings).then(() => {
+  validateSettings(settings).then(() => {
     initializeWeb3(chain).then(nodeList => {
       initializeEthereum(nodeList).then(() => {
         initializeHelper().then(() => {
@@ -160,17 +160,18 @@ const preloadEthereum = () => {
         return preloadEthereum()
       })
     })
-  // }).catch(error => {
-  //   spinner.stop()
-  //   printErrorHeading('MISCONFIGURED SETTINGS')
-  //   printReason(error)
-  //   printLocation(getCoreLocation('nodeConfig.json'))
+  }).catch(error => {
+    spinner.stop()
+    printErrorHeading('MISCONFIGURED WALLET')
+    printReason(error)
+    printInfoLine('Command','crypto-sniper wallet private_key [key]')
+    printLocation(getCoreLocation('wallets.json'))
 
-  //   confirmReload().then(() => {
-  //     settings = walletConfig.store
-  //     return preloadEthereum()
-  //   })
-  // })
+    confirmReload().then(() => {
+      settings = walletConfig.store
+      return preloadEthereum()
+    })
+  })
 }
 
 const bootstrapExchange = () => {
