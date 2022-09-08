@@ -36,7 +36,7 @@ jobs:
         fetch-depth: 0
     
     - name: Release
-      uses: justincy/github-action-npm-release@v1.2.0
+      uses: justincy/github-action-npm-release@2.0.2
       id: release
     
     - name: Use Node.js ${{ matrix.node-version }}
