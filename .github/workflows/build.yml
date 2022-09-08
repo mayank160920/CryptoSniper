@@ -5,8 +5,6 @@ name: Build Binaries
 
 on:
   push:
-    branches:
-      - main
     branches-ignore: "dependabot/**"      
 
 jobs:
