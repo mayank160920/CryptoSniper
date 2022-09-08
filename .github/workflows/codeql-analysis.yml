@@ -14,9 +14,11 @@ name: "CodeQL"
 on:
   push:
     branches: [ main ]
+    branches-ignore: "dependabot/**"
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ main ]
+    branches-ignore: "dependabot/**"
   schedule:
     - cron: '21 14 * * 6'
 
