@@ -37,6 +37,7 @@ https://blindgr2.github.io/cryptosniper/
 * [Settings](#settings)
 * [Commands](#commands)
 * [Feature Requests & Bug Reporting](#feature-requests--bug-reporting)
+* [Fair Use Act Disclaimer](#fair-use-act-disclaimer)
 <!-- tocstop -->
 
 # Supported Blockchains
