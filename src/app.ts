@@ -83,8 +83,8 @@ import {
 import {config, walletConfig} from './config/index'
 
 const Package = {
-  name: 'cryptosniper',
-  version: '1.1.3',
+  name: 'CryptoSniper',
+  version: '1.1.4',
 }
 
 let settings: any
@@ -99,10 +99,10 @@ export async function start() {
     printMainHeader(G, Package.version)
     printErrorHeading('DISCLAIMER')
     console.log('All investment strategies and investments involve risk of loss.')
-    console.log('By using cryptosniper, you agree to accept all liabilities, and that')
+    console.log('By using CryptoSniper, you agree to accept all liabilities, and that')
     console.log('no claims can be made against the developers.')
-    console.log('\ndefi-sniper is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download cryptosniper, you have been ' + chalk.red('SCAMMED') + '!')
+    console.log('\ncryptosniper is ' + chalk.yellow('FREE') + ' to download.')
+    console.log('If you paid someone to download CryptoSniper, you have been ' + chalk.red('SCAMMED') + '!')
 
     agreeDisclaimer().then(() => {
       initializeFiles()
@@ -122,15 +122,12 @@ const chainSelection = () => {
     printMainHeader(packageName, Package.version)
     printHeading('Ethereum Virtual Machine')
 
-    chainSelectionChoices().then(chainSelection => {
-      if (chainSelection === 0)
+    chainSelectionChoices().then(chainSelected => {
+      if (chainSelected === 0)
         return process.exit()
-
-      chain = chainSelection
-
+      chain = chainSelected
       exchangeSelection(chain).then(exchangeSelection => {
         if (exchangeSelection === 0) return process.exit()
-        // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
         return exchangeSelection === 1 ? chainSelection() : (exchange = exchangeSelection, preloadEthereum())
       })
     })
@@ -164,7 +161,7 @@ const preloadEthereum = () => {
     spinner.stop()
     printErrorHeading('MISCONFIGURED WALLET')
     printReason(error)
-    printInfoLine('Command','cryptosniper wallet private_key [key]')
+    printInfoLine('Command','CryptoSniper wallet private_key [key]')
     printLocation(getCoreLocation('wallets.json'))
 
     confirmReload().then(() => {

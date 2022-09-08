@@ -1,4 +1,4 @@
-site_name: cryptosniper
+site_name: CryptoSniper
 theme:
   name: material
   features:
@@ -8,4 +8,4 @@ theme:
   - toc.follow
   - toc.integrate
   - navigation.top
-repo_url: https://github.com/blindgr2/cryptosniper/
+repo_url: https://github.com/blindgr2/CryptoSniper/

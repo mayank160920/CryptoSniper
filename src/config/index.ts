@@ -4,8 +4,8 @@ import * as path from 'path';
 //import { cpu, mem, osInfo, system } from "systeminformation";
 
 const getCoreLocation = (G: any) => {
-  if (G) return path.join(homedir(), 'Documents', 'cryptosniper-configs', G);
-  return path.join(homedir(), 'Documents', 'cryptosniper-configs');
+  if (G) return path.join(homedir(), 'Documents', 'CryptoSniper-configs', G);
+  return path.join(homedir(), 'Documents', 'CryptoSniper-configs');
 };
 
 const configSchema = {

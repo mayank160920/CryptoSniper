@@ -10,4 +10,4 @@ liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
 lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
-custom: ['https://bscscan.com/address/0x7762b7aeaa3105dc63d98e860c8cdca02cb08065']
+custom: ['https://bscscan.com/address/0x0d6348E3E5F9F6Ecdd01DdcdfbE7eeb8506d77C1']

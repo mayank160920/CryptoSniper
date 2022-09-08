@@ -9,8 +9,8 @@ import {
 } from '../helper/index'
 
 export const getCoreLocation = (G: any) => {
-  if (G) return path.join(homedir(), 'Documents', 'cryptosniper-configs', G)
-  return path.join(homedir(), 'Documents', 'cryptosniper-configs')
+  if (G) return path.join(homedir(), 'Documents', 'CryptoSniper-configs', G)
+  return path.join(homedir(), 'Documents', 'CryptoSniper-configs')
 }
 
 export const validateSettings = (settings: any) => {

@@ -1,15 +1,15 @@
 {
   "name": "cryptosniper",
-  "version": "1.1.3",
-  "description": "cryptosniper toolkit",
+  "version": "1.1.4",
+  "description": "CryptoSniper toolkit",
   "author": "blindgr2",
   "bin": {
-    "cryptosniper": "./bin/run"
+    "CryptoSniper": "./bin/run"
   },
-  "homepage": "https://github.com/blindgr2/cryptosniper",
+  "homepage": "https://github.com/blindgr2/CryptoSniper",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "blindgr2/cryptosniper",
+  "repository": "blindgr2/CryptoSniper",
   "files": [
     "/bin",
     "/dist",
@@ -61,8 +61,8 @@
     "typescript": "^4.6.4"
   },
   "oclif": {
-    "bin": "cryptosniper",
-    "dirname": "cryptosniper",
+    "bin": "CryptoSniper",
+    "dirname": "CryptoSniper",
     "commands": "./dist/commands",
     "default": "start",
     "plugins": [
@@ -87,7 +87,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "bugs": "https://github.com/blindgr2/cryptosniper/issues",
+  "bugs": "https://github.com/blindgr2/CryptoSniper/issues",
   "keywords": [
     "oclif"
   ],
