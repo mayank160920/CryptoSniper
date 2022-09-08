@@ -52,7 +52,7 @@ jobs:
     - name: Calculate SHA256 checksum
       if: ${{ steps.release.outputs.released == 'true' }}
       run: |
-        for filename in CryptoSniper-*; do shasum -a 256 ${filename} > ${filename}.sha256 ; done
+        for filename in cryptosniper-*; do shasum -a 256 ${filename} > ${filename}.sha256 ; done
       shell: bash
       working-directory: pkg
 
