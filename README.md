@@ -2,14 +2,14 @@
       <p align="center">
 An open-source defi sniper.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/blindgr2/crypto-sniper) [![Github All Releases](https://img.shields.io/github/downloads/blindgr2/crypto-sniper/total.svg)]() [![build](https://github.com/blindgr2/crypto-sniper/actions/workflows/build.yml/badge.svg)](https://github.com/blindgr2/crypto-sniper/actions/workflows/build.yml)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/blindgr2/cryptosniper) [![Github All Releases](https://img.shields.io/github/downloads/blindgr2/cryptosniper/total.svg)]() [![build](https://github.com/blindgr2/cryptosniper/actions/workflows/build.yml/badge.svg)](https://github.com/blindgr2/cryptosniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
-**crypto-sniper** is free to download. 
+**cryptosniper** is free to download. 
 
 
 
-![crypto-sniper](https://user-images.githubusercontent.com/93244980/166409860-94ee8e71-933c-46d3-b1ca-6564f16d37ca.png)
+![cryptosniper](https://user-images.githubusercontent.com/93244980/166409860-94ee8e71-933c-46d3-b1ca-6564f16d37ca.png)
     
      
 </p>
@@ -24,7 +24,7 @@ An open-source defi sniper.
 **Documentation** 
 See the documentation site for detailed descriptions of all features and options.
 
-https://blindgr2.github.io/crypto-sniper/
+https://blindgr2.github.io/cryptosniper/
 
 # Table of Contents
 <!-- toc -->
@@ -73,93 +73,93 @@ https://blindgr2.github.io/crypto-sniper/
 
 **Transparent Builds**
 
-crypto-sniper is the only bot with full transparency in mind. 
+cryptosniper is the only bot with full transparency in mind. 
 
 Binaries are built using GitHub Actions and published directly to a release. This happens during the "Release" step of the builds. 
 
-See example here: https://github.com/blindgr2/crypto-sniper/runs/6201209436?check_suite_focus=true#step:9:1
+See example here: https://github.com/blindgr2/cryptosniper/runs/6201209436?check_suite_focus=true#step:9:1
 ![release](https://user-images.githubusercontent.com/93244980/165802350-2dcc0278-fa64-4202-a40c-8597291b0381.png)
 
 **Code Scanning**
 
 Dependabot constantly monitors for out-of-date dependency packages.
 
-crypto-sniper is also scanned with multiple security products using GitHub Actions.
+cryptosniper is also scanned with multiple security products using GitHub Actions.
 * Snyk
 * OSSR
 * CodeQL
 
 # Installation
 
-Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/blindgr2/crypto-sniper/releases/) for the latest version.
+Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/blindgr2/cryptosniper/releases/) for the latest version.
 
 ## Linux
 
 Open Terminal.
 
-`curl -L https://github.com/blindgr2/crypto-sniper/releases/latest/download/crypto-sniper-linux-x64 -o crypto-sniper`
+`curl -L https://github.com/blindgr2/cryptosniper/releases/latest/download/cryptosniper-linux-x64 -o cryptosniper`
 
-`chmod +x crypto-sniper`
+`chmod +x cryptosniper`
 
 ## macOS
 
 Open Terminal.
 
-`curl -L https://github.com/blindgr2/crypto-sniper/releases/latest/download/crypto-sniper-macos-x64 -o crypto-sniper`
+`curl -L https://github.com/blindgr2/cryptosniper/releases/latest/download/cryptosniper-macos-x64 -o cryptosniper`
 
-`chmod +x crypto-sniper`
+`chmod +x cryptosniper`
 
-If you try to run `./crypto-sniper` at this point, you will get a message that macOS has blocked it.
+If you try to run `./cryptosniper` at this point, you will get a message that macOS has blocked it.
 
 To fix that, go to System Preferences and click Security & Privacy. Click the Open Anyway button in the General pane.
 
 <img src="https://user-images.githubusercontent.com/100382691/156895989-cee7cc92-6c79-4c8d-81d6-f561d3e63df9.png" width="500">
 
-Now you should be able to execute `./crypto-sniper` in your Terminal.
+Now you should be able to execute `./cryptosniper` in your Terminal.
 
 ## Windows
 
 Download the latest Windows release.
 
-https://github.com/blindgr2/crypto-sniper/releases/latest/download/crypto-sniper-win-x64.exe
+https://github.com/blindgr2/cryptosniper/releases/latest/download/cryptosniper-win-x64.exe
 
-After downloading, you can optionally rename it from "crypto-sniper-win-64" to crypto-sniper. It will work either way.
+After downloading, you can optionally rename it from "cryptosniper-win-64" to cryptosniper. It will work either way.
 
-**If you get a message that crypto-sniper was blocked by SmartScreen/Defender:**
+**If you get a message that cryptosniper was blocked by SmartScreen/Defender:**
 
 Option 1:
 - Click "More Info"
 - Click the "Run anyway" button.
 
 Option 2:
-- Right click on crypto-sniper and go to properties
+- Right click on cryptosniper and go to properties
 - Check the box that says "unblock" and click OK.
 
-You should now be able to run crypto-sniper.
+You should now be able to run cryptosniper.
 
 # Quickstart
 
 ### Interactive Mode
 
-Simply running crypto-sniper by double clicking will start it in interactive mode.
+Simply running cryptosniper by double clicking will start it in interactive mode.
 
 ### CLI Mode
 
-In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where you downloaded crypto-sniper.
+In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where you downloaded cryptosniper.
 
 ` cd ~/Downloads`
 
-Configure your wallet by using the CLI or by editing the ~/Documents/crypto-sniper-cofigs/wallets.json file.
+Configure your wallet by using the CLI or by editing the ~/Documents/cryptosniper-cofigs/wallets.json file.
 
-`./crypto-sniper wallet private_key [paste key]`
+`./cryptosniper wallet private_key [paste key]`
 
-Start crypto-sniper.
+Start cryptosniper.
 
-`./crypto-sniper start`
+`./cryptosniper start`
 
 # Settings
 
-A crypto-sniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
+A cryptosniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
 
 * config.json
 * nodeConfig.json
@@ -169,7 +169,7 @@ A crypto-sniper-configs folder will be created in your Documents. Inside you wil
 
 `private_key`
 
-Enter the private key (64 characters, not the seed phrase) of your wallet that you wish to use crypto-sniper with. 
+Enter the private key (64 characters, not the seed phrase) of your wallet that you wish to use cryptosniper with. 
 
 `additional_private_keys`
 
@@ -177,13 +177,13 @@ Reserved for future use.
 
 ## config.json
 
-The configs.json file is located in the crypto-sniper-configs folder in your Documents.
+The configs.json file is located in the cryptosniper-configs folder in your Documents.
 
 `amt_mode`
 
 Use USD, ETH, or TKN to configure the mode of the AMOUNT option. By setting USD will value in U.S. dollars, ETH will value in the native Blockchain token (e.g. ETH, BNB, etc.), and TKN will be in the amount of tokens itself.
 
-When using TKN mode, please make sure you have more than enough native balance to prevent "insufficient funds" error, as crypto-sniper is unable to estimate the native spending.
+When using TKN mode, please make sure you have more than enough native balance to prevent "insufficient funds" error, as cryptosniper is unable to estimate the native spending.
 
 `amount`
 
@@ -203,11 +203,11 @@ The number of blocks to wait after the addLiquidity transaction is detected.
 
 `iteration`
 
-Enter the number of iteration you wish to perform. Each iteration will weight the AMOUNT parameter. E.g. If you have 0.25 in AMOUNT, and 2 in ITERATION, crypto-sniper will perform 0.25 ETH x 2, totaling 0.5 ETH.
+Enter the number of iteration you wish to perform. Each iteration will weight the AMOUNT parameter. E.g. If you have 0.25 in AMOUNT, and 2 in ITERATION, cryptosniper will perform 0.25 ETH x 2, totaling 0.5 ETH.
 
 `gas_price`
 
-This is to configure the gas price of your transactions. You may also use 0 for crypto-sniper to calculate the gas automatically; 2x of the current network gas.
+This is to configure the gas price of your transactions. You may also use 0 for cryptosniper to calculate the gas automatically; 2x of the current network gas.
 
 `priority_gas`
 
@@ -215,11 +215,11 @@ This is to configure the priority gas of your Ethereum Mainnet transactions.
 
 `honeypot_check`
 
-Use true or false to configure if crypto-sniper should scan the contract address with RugDoc's Honeypot Checker before executing the swap transaction.
+Use true or false to configure if cryptosniper should scan the contract address with RugDoc's Honeypot Checker before executing the swap transaction.
 
 `block_severe_fee`
 
-Use true or false to configure if crypto-sniper should block severely high trading fee (over 50%) tokens. The HONEYPOT_CHECK option must be enabled for this to work.
+Use true or false to configure if cryptosniper should block severely high trading fee (over 50%) tokens. The HONEYPOT_CHECK option must be enabled for this to work.
 
 `delay_execution`
 
@@ -231,11 +231,11 @@ This configures the delay in seconds between each iteration.
 
 `rug_pull_check`
 
-Use true or false to configure if crypto-sniper should listen to removeLiquidity() related transaction. If such a transaction is detected, crypto-sniper will TRY to front-run the transaction. 
+Use true or false to configure if cryptosniper should listen to removeLiquidity() related transaction. If such a transaction is detected, cryptosniper will TRY to front-run the transaction. 
 
 `sell_management`
 
-Use true or false to configure if crypto-sniper should monitor the live value and sell options after the swap transactions. 
+Use true or false to configure if cryptosniper should monitor the live value and sell options after the swap transactions. 
 
 ## nodeConfig.json
 
@@ -243,9 +243,9 @@ This file contains the websocket and RPC node URLs for each blockchain.
 
 ## Telegram
 
-The telegram.json file is located in the crypto-sniper-configs folder in your Documents.
+The telegram.json file is located in the cryptosniper-configs folder in your Documents.
 
-In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, crypto-sniper needs to log in to your Telegram account.
+In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, cryptosniper needs to log in to your Telegram account.
 
 To do so, you would need to provide API parameters of your account. Follow these steps:
 
@@ -264,20 +264,20 @@ To do so, you would need to provide API parameters of your account. Follow these
 
 # Commands
 <!-- commands -->
-* [`crypto-sniper autocomplete [SHELL]`](#crypto-sniper-autocomplete-shell)
-* [`crypto-sniper config [KEY] [VALUE]`](#crypto-sniper-config-key-value)
-* [`crypto-sniper help [COMMAND]`](#crypto-sniper-help-command)
-* [`crypto-sniper nodes [KEY] [VALUE]`](#crypto-sniper-nodes-key-value)
-* [`crypto-sniper start`](#crypto-sniper-start)
-* [`crypto-sniper wallet [KEY] [VALUE]`](#crypto-sniper-wallet-key-value)
+* [`cryptosniper autocomplete [SHELL]`](#cryptosniper-autocomplete-shell)
+* [`cryptosniper config [KEY] [VALUE]`](#cryptosniper-config-key-value)
+* [`cryptosniper help [COMMAND]`](#cryptosniper-help-command)
+* [`cryptosniper nodes [KEY] [VALUE]`](#cryptosniper-nodes-key-value)
+* [`cryptosniper start`](#cryptosniper-start)
+* [`cryptosniper wallet [KEY] [VALUE]`](#cryptosniper-wallet-key-value)
 
-## `crypto-sniper autocomplete [SHELL]`
+## `cryptosniper autocomplete [SHELL]`
 
 display autocomplete installation instructions
 
 ```
 USAGE
-  $ crypto-sniper autocomplete [SHELL] [-r]
+  $ cryptosniper autocomplete [SHELL] [-r]
 
 ARGUMENTS
   SHELL  shell type
@@ -289,24 +289,24 @@ DESCRIPTION
   display autocomplete installation instructions
 
 EXAMPLES
-  $ crypto-sniper autocomplete
+  $ cryptosniper autocomplete
 
-  $ crypto-sniper autocomplete bash
+  $ cryptosniper autocomplete bash
 
-  $ crypto-sniper autocomplete zsh
+  $ cryptosniper autocomplete zsh
 
-  $ crypto-sniper autocomplete --refresh-cache
+  $ cryptosniper autocomplete --refresh-cache
 ```
 
 _See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.2.0/src/commands/autocomplete/index.ts)_
 
-## `crypto-sniper config [KEY] [VALUE]`
+## `cryptosniper config [KEY] [VALUE]`
 
 manage configuration
 
 ```
 USAGE
-  $ crypto-sniper config [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper config [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (amt_mode|amount|slippage|mempool_block_delay|iteration|gas_price|priority_gas|honeypot_check|block_severe_fee|
@@ -321,15 +321,15 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/blindgr2/crypto-sniper/blob/v1.1.2/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/blindgr2/cryptosniper/blob/v1.1.2/dist/commands/config.ts)_
 
-## `crypto-sniper help [COMMAND]`
+## `cryptosniper help [COMMAND]`
 
-Display help for crypto-sniper.
+Display help for cryptosniper.
 
 ```
 USAGE
-  $ crypto-sniper help [COMMAND] [-n]
+  $ cryptosniper help [COMMAND] [-n]
 
 ARGUMENTS
   COMMAND  Command to show help for.
@@ -338,18 +338,18 @@ FLAGS
   -n, --nested-commands  Include all nested commands in the output.
 
 DESCRIPTION
-  Display help for crypto-sniper.
+  Display help for cryptosniper.
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
-## `crypto-sniper nodes [KEY] [VALUE]`
+## `cryptosniper nodes [KEY] [VALUE]`
 
 manage EVM node configuration
 
 ```
 USAGE
-  $ crypto-sniper nodes [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper nodes [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (eth.websockets|eth.rpc|eth_rinkeby.websockets|eth_rinkeby.rpc|cro.websockets|cro.rpc|bsc.websockets|bsc.rpc|ma
@@ -364,32 +364,32 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/crypto-sniper/blob/v1.1.2/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/cryptosniper/blob/v1.1.2/dist/commands/nodes.ts)_
 
-## `crypto-sniper start`
+## `cryptosniper start`
 
 run bot
 
 ```
 USAGE
-  $ crypto-sniper start
+  $ cryptosniper start
 
 DESCRIPTION
   run bot
 
 EXAMPLES
-  $ crypto-sniper start
+  $ cryptosniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/blindgr2/crypto-sniper/blob/v1.1.2/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/blindgr2/cryptosniper/blob/v1.1.2/dist/commands/start.ts)_
 
-## `crypto-sniper wallet [KEY] [VALUE]`
+## `cryptosniper wallet [KEY] [VALUE]`
 
 add or remove wallet
 
 ```
 USAGE
-  $ crypto-sniper wallet [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper wallet [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (private_key|additional_private_keys)
@@ -403,7 +403,7 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/crypto-sniper/blob/v1.1.2/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/cryptosniper/blob/v1.1.2/dist/commands/wallet.ts)_
 <!-- commandsstop -->
 <hr>
 
@@ -415,7 +415,7 @@ Please submit an issue to this repo and include as much information as possible.
 
 **Contributors**
 
-[![Contributors Display](https://badges.pufler.dev/contributors/blindgr2/crypto-sniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
+[![Contributors Display](https://badges.pufler.dev/contributors/blindgr2/cryptosniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
 
 <hr>
 

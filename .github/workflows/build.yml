@@ -37,7 +37,7 @@ jobs:
     - run: npm run prepack && npm run pkg
     - name: Calculate SHA256 checksum
       run: |
-        for filename in crypto-sniper-*; do shasum -a 256 ${filename} > ${filename}.sha256 ; done
+        for filename in cryptosniper-*; do shasum -a 256 ${filename} > ${filename}.sha256 ; done
       shell: bash
       working-directory: pkg
 
@@ -46,4 +46,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: |
-          pkg/crypto-sniper-*
+          pkg/cryptosniper-*

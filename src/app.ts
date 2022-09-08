@@ -83,7 +83,7 @@ import {
 import {config, walletConfig} from './config/index'
 
 const Package = {
-  name: 'crypto-sniper',
+  name: 'cryptosniper',
   version: '1.1.2',
 }
 
@@ -99,10 +99,10 @@ export async function start() {
     printMainHeader(G, Package.version)
     printErrorHeading('DISCLAIMER')
     console.log('All investment strategies and investments involve risk of loss.')
-    console.log('By using crypto-sniper, you agree to accept all liabilities, and that')
+    console.log('By using cryptosniper, you agree to accept all liabilities, and that')
     console.log('no claims can be made against the developers.')
     console.log('\ndefi-sniper is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download crypto-sniper, you have been ' + chalk.red('SCAMMED') + '!')
+    console.log('If you paid someone to download cryptosniper, you have been ' + chalk.red('SCAMMED') + '!')
 
     agreeDisclaimer().then(() => {
       initializeFiles()
@@ -164,7 +164,7 @@ const preloadEthereum = () => {
     spinner.stop()
     printErrorHeading('MISCONFIGURED WALLET')
     printReason(error)
-    printInfoLine('Command','crypto-sniper wallet private_key [key]')
+    printInfoLine('Command','cryptosniper wallet private_key [key]')
     printLocation(getCoreLocation('wallets.json'))
 
     confirmReload().then(() => {

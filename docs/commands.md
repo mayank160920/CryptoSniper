@@ -1,19 +1,19 @@
 # Commands
 <!-- commands -->
-* [`crypto-sniper autocomplete [SHELL]`](#crypto-sniper-autocomplete-shell)
-* [`crypto-sniper config [KEY] [VALUE]`](#crypto-sniper-config-key-value)
-* [`crypto-sniper help [COMMAND]`](#crypto-sniper-help-command)
-* [`crypto-sniper nodes [KEY] [VALUE]`](#crypto-sniper-nodes-key-value)
-* [`crypto-sniper start`](#crypto-sniper-start)
-* [`crypto-sniper wallet [KEY] [VALUE]`](#crypto-sniper-wallet-key-value)
+* [`cryptosniper autocomplete [SHELL]`](#cryptosniper-autocomplete-shell)
+* [`cryptosniper config [KEY] [VALUE]`](#cryptosniper-config-key-value)
+* [`cryptosniper help [COMMAND]`](#cryptosniper-help-command)
+* [`cryptosniper nodes [KEY] [VALUE]`](#cryptosniper-nodes-key-value)
+* [`cryptosniper start`](#cryptosniper-start)
+* [`cryptosniper wallet [KEY] [VALUE]`](#cryptosniper-wallet-key-value)
 
-## `crypto-sniper autocomplete [SHELL]`
+## `cryptosniper autocomplete [SHELL]`
 
 display autocomplete installation instructions
 
 ```
 USAGE
-  $ crypto-sniper autocomplete [SHELL] [-r]
+  $ cryptosniper autocomplete [SHELL] [-r]
 
 ARGUMENTS
   SHELL  shell type
@@ -25,24 +25,24 @@ DESCRIPTION
   display autocomplete installation instructions
 
 EXAMPLES
-  $ crypto-sniper autocomplete
+  $ cryptosniper autocomplete
 
-  $ crypto-sniper autocomplete bash
+  $ cryptosniper autocomplete bash
 
-  $ crypto-sniper autocomplete zsh
+  $ cryptosniper autocomplete zsh
 
-  $ crypto-sniper autocomplete --refresh-cache
+  $ cryptosniper autocomplete --refresh-cache
 ```
 
 _See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.2.0/src/commands/autocomplete/index.ts)_
 
-## `crypto-sniper config [KEY] [VALUE]`
+## `cryptosniper config [KEY] [VALUE]`
 
 manage configuration
 
 ```
 USAGE
-  $ crypto-sniper config [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper config [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (amt_mode|amount|slippage|iteration|gas_price|priority_gas|honeypot_check|block_severe_fee|delay_execution|dela
@@ -57,15 +57,15 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/blindgr2/crypto-sniper/blob/v0.4.0/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/blindgr2/cryptosniper/blob/v0.4.0/dist/commands/config.ts)_
 
-## `crypto-sniper help [COMMAND]`
+## `cryptosniper help [COMMAND]`
 
-Display help for crypto-sniper.
+Display help for cryptosniper.
 
 ```
 USAGE
-  $ crypto-sniper help [COMMAND] [-n]
+  $ cryptosniper help [COMMAND] [-n]
 
 ARGUMENTS
   COMMAND  Command to show help for.
@@ -74,18 +74,18 @@ FLAGS
   -n, --nested-commands  Include all nested commands in the output.
 
 DESCRIPTION
-  Display help for crypto-sniper.
+  Display help for cryptosniper.
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
-## `crypto-sniper nodes [KEY] [VALUE]`
+## `cryptosniper nodes [KEY] [VALUE]`
 
 manage EVM node configuration
 
 ```
 USAGE
-  $ crypto-sniper nodes [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper nodes [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (eth.websockets|eth.rpc|eth_rinkeby.websockets|eth_rinkeby.rpc|bsc.websockets|bsc.rpc|matic.websockets|matic.rp
@@ -100,32 +100,32 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/crypto-sniper/blob/v0.4.0/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/cryptosniper/blob/v0.4.0/dist/commands/nodes.ts)_
 
-## `crypto-sniper start`
+## `cryptosniper start`
 
 run bot
 
 ```
 USAGE
-  $ crypto-sniper start
+  $ cryptosniper start
 
 DESCRIPTION
   run bot
 
 EXAMPLES
-  $ crypto-sniper start
+  $ cryptosniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/blindgr2/crypto-sniper/blob/v0.4.0/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/blindgr2/cryptosniper/blob/v0.4.0/dist/commands/start.ts)_
 
-## `crypto-sniper wallet [KEY] [VALUE]`
+## `cryptosniper wallet [KEY] [VALUE]`
 
 add or remove wallet
 
 ```
 USAGE
-  $ crypto-sniper wallet [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper wallet [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (private_key|additional_private_keys)
@@ -139,5 +139,5 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/crypto-sniper/blob/v0.4.0/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/cryptosniper/blob/v0.4.0/dist/commands/wallet.ts)_
 <!-- commandsstop -->

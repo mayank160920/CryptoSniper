@@ -1,6 +1,6 @@
 # Settings
 
-A crypto-sniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
+A cryptosniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
 
 * config.json
 * nodeConfig.json
@@ -9,9 +9,9 @@ A crypto-sniper-configs folder will be created in your Documents. Inside you wil
 
 ## Telegram
 
-The telegram.json file is located in the crypto-sniper-configs folder in your Documents.
+The telegram.json file is located in the cryptosniper-configs folder in your Documents.
 
-In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, crypto-sniper needs to log in to your Telegram account.
+In order for Telegram Scanner and CMC/CG Fastest Alerts Telegram to work, cryptosniper needs to log in to your Telegram account.
 
 To do so, you would need to provide API parameters of your account. Follow these steps:
 

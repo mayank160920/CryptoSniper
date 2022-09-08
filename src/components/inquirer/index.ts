@@ -7,7 +7,7 @@ const previousMenu = {
 }
 
 const quitCli = {
-  name: 'Quit crypto-sniper',
+  name: 'Quit cryptosniper',
   value: 0,
 }
 

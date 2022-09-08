@@ -1,12 +1,12 @@
 # config.json
 
-The configs.json file is located in the crypto-sniper-configs folder in your Documents.
+The configs.json file is located in the cryptosniper-configs folder in your Documents.
 
 `amt_mode`
 
 Use USD, ETH, or TKN to configure the mode of the AMOUNT option. By setting USD will value in U.S. dollars, ETH will value in the native Blockchain token (e.g. ETH, BNB, etc.), and TKN will be in the amount of tokens itself.
 
-When using TKN mode, please make sure you have more than enough native balance to prevent "insufficient funds" error, as crypto-sniper is unable to estimate the native spending.
+When using TKN mode, please make sure you have more than enough native balance to prevent "insufficient funds" error, as cryptosniper is unable to estimate the native spending.
 
 `amount`
 
@@ -26,11 +26,11 @@ The number of blocks to wait after the addLiquidity transaction is detected.
 
 `iteration`
 
-Enter the number of iteration you wish to perform. Each iteration will weight the AMOUNT parameter. E.g. If you have 0.25 in AMOUNT, and 2 in ITERATION, crypto-sniper will perform 0.25 ETH x 2, totaling 0.5 ETH.
+Enter the number of iteration you wish to perform. Each iteration will weight the AMOUNT parameter. E.g. If you have 0.25 in AMOUNT, and 2 in ITERATION, cryptosniper will perform 0.25 ETH x 2, totaling 0.5 ETH.
 
 `gas_price`
 
-This is to configure the gas price of your transactions. You may also use 0 for crypto-sniper to calculate the gas automatically; 2x of the current network gas.
+This is to configure the gas price of your transactions. You may also use 0 for cryptosniper to calculate the gas automatically; 2x of the current network gas.
 
 `priority_gas`
 
@@ -38,11 +38,11 @@ This is to configure the priority gas of your Ethereum Mainnet transactions.
 
 `honeypot_check`
 
-Use true or false to configure if crypto-sniper should scan the contract address with RugDoc's Honeypot Checker before executing the swap transaction.
+Use true or false to configure if cryptosniper should scan the contract address with RugDoc's Honeypot Checker before executing the swap transaction.
 
 `block_severe_fee`
 
-Use true or false to configure if crypto-sniper should block severely high trading fee (over 50%) tokens. The HONEYPOT_CHECK option must be enabled for this to work.
+Use true or false to configure if cryptosniper should block severely high trading fee (over 50%) tokens. The HONEYPOT_CHECK option must be enabled for this to work.
 
 `delay_execution`
 
@@ -54,8 +54,8 @@ This configures the delay in seconds between each iteration.
 
 `rug_pull_check`
 
-Use true or false to configure if crypto-sniper should listen to removeLiquidity() related transaction. If such a transaction is detected, crypto-sniper will TRY to front-run the transaction. 
+Use true or false to configure if cryptosniper should listen to removeLiquidity() related transaction. If such a transaction is detected, cryptosniper will TRY to front-run the transaction. 
 
 `sell_management`
 
-Use true or false to configure if crypto-sniper should monitor the live value and sell options after the swap transactions. 
+Use true or false to configure if cryptosniper should monitor the live value and sell options after the swap transactions. 
