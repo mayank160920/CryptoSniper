@@ -60,5 +60,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: ${{ steps.release.outputs.released == 'true' }}
       with:
+        tag_name: ${{ steps.release.outputs.release_tag }}
         files: |
           pkg/CryptoSniper-*
