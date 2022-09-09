@@ -9,11 +9,11 @@
 name: OSSAR
 
 on:
-  push:
-    branches-ignore: "dependabot/**"
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches-ignore: "dependabot/**"
+  # push:
+  #   branches-ignore: "dependabot/**"
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches-ignore: "dependabot/**"
   schedule:
     - cron: '36 17 * * 5'
 
