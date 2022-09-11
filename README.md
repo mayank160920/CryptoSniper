@@ -1,23 +1,84 @@
+<a name="readme-top"></a>
 <div align="center">
-      <p align="center">
 
-Open-source repo for **CryptoSniper** community edition
+[![Release][release-shield]][release-url]
+[![Downloads][downloads-shield]]()
+[![Workflow][workflow-shield]][workflow-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Telegram][telegram-shield]][telegram-url]
 
-Telegram support: [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+Ef0sqYpaF7c0ZWNh)
+[![Open-Source][opensource-shield]]()
+[![Built With Love][love-shield]]()
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/blindgr2/CryptoSniper) [![Github All Releases](https://img.shields.io/github/downloads/blindgr2/CryptoSniper/total.svg)]() [![build](https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml/badge.svg)](https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml)
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+</div>
+<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url] -->
 
+<br />
+<div align="center">
+  <!-- <a href="https://github.com/blindgr2/CryptoSniper">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a> -->
 
+  <h3 align="center">CryptoSniper Community Edition</h3>
 
-    
-     
-</p>
+  <p align="center">
+    Multi-chain defi crypto sniper written in typescript/javascript. Fastest method of sniping with auto-sell and rug prevention features. Mempool and manual sniping.
+     <!--  <br />
+    <a href="https://github.com/blindgr2/CryptoSniper"><strong>Explore the docs »</strong></a> -->
+    <br />
+    <br />
+    <a href="https://github.com/blindgr2/CryptoSniper/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/blindgr2/CryptoSniper/issues">Request Feature</a>
+  </p>
 </div>
 
-<hr>
 
-## Supported Blockchains
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-cryptosniper-community-edition">About CryptoSniper Community Edition</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#fair-use-act-disclaimer">Fair Use Act Disclaimer</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About CryptoSniper Community Edition
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+
+### Features
+* Telegram Sniper
+* Mempool Sniper
+* Instant Sniper
+* CoinMarketCap/CoinGecko Listing Sniper
+* PancakeSwap Prediction Bot
+* DxSale/PinkSale Presale Bot
+
+### Supported Blockchains
 * Ethereum
 * Cronos
 * Binance Smart Chain
@@ -26,7 +87,7 @@ Telegram support: [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?styl
 * KCC
 * Avalanche
 
-## Exchanges
+### Exchanges
 * Uniswap
 * SushiSwap
 * Mad Meerkat Finance
@@ -39,35 +100,40 @@ Telegram support: [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?styl
 * KuSwap
 * Trader Joe
 
-## Features
-* Telegram Sniper
-* Mempool Sniper
-* Instant Sniper
-* CoinMarketCap/CoinGecko Listing Sniper
-* PancakeSwap Prediction Bot
-* DxSale/PinkSale Presale Bot
-
 <hr>
 
-## CryptoSniper Pro - Coming Soon
+### CryptoSniper Pro - Coming Soon!
 * Rebuilt from the ground up for optimal performance
 * Cross-platform graphical user interface (GUI)
 * Multi-chain portfolio tracking
 * Multiple wallets
 * Buy/sell management
-* Coming soon. Reach out to @blindgr on telegram for wait list.
+* Reach out to @blindgr on telegram for wait list spot and beta testing opportunities
 
-<hr>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Documentation 
 
-See below (expand dropdowns)
 
-<details><summary><b>Installation</b></summary>
+### Built With
 
-## Installation
+[![javascript][javascript-shield]]()
+[![typescript][typescript-shield]]()
+[![oclif][oclif-shield]][oclif-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Installation
+
 Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64). Check the [releases page](https://github.com/blindgr2/CryptoSniper/releases/) for the latest version.
 
+Releases are built and published using [Github Actions](https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml) for full transparency.
+
+SHA256 checksums are also provided to verify authenticity. **DO NOT DOWNLOAD FROM ANY OTHER SOURCE OR FORK EXCEPT THIS** [REPO](https://github.com/blindgr2/CryptoSniper)!
 
 <details><summary>Linux</summary>
 
@@ -116,11 +182,13 @@ Option 2:
 You should now be able to run CryptoSniper.
 </details>
 
-</details>
 
-<hr>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<details><summary><b>Quickstart</b></summary>
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 ### Interactive Mode
 
@@ -139,11 +207,10 @@ Configure your wallet by using the CLI or by editing the ~/Documents/CryptoSnipe
 Start CryptoSniper.
 
 `./cryptosniper start`
-</details>
 
 <hr>
 
-<details><summary><b>Settings</b></summary>
+### Settings
 
 A CryptoSniper-configs folder will be created in your Documents. Inside you will find three JSON files that contain various settings.
 
@@ -252,11 +319,9 @@ To do so, you would need to provide API parameters of your account. Follow these
 
 </details>
 
-</details>
-
 <hr>
 
-<details><summary><b>CLI Commands</b></summary>
+<details><summary><b>View All CLI Commands</b></summary>
 
 <!-- commands -->
 * [`cryptosniper autocomplete [SHELL]`](#cryptosniper-autocomplete-shell)
@@ -402,20 +467,74 @@ _See code: [dist/commands/wallet.ts](https://github.com/blindgr2/CryptoSniper/bl
 <!-- commandsstop -->
 </details>
 
-<hr>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Feature Requests & Bug Reporting
 
-Please submit an issue to this repo and include as much information as possible. For feature requests, also reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
 
-<hr>
+<!-- ROADMAP -->
+## Roadmap
 
-**Contributors**
+<!-- - [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish -->
 
-[![Contributors Display](https://badges.pufler.dev/contributors/blindgr2/CryptoSniper?size=50&padding=5&bots=true)](https://badges.pufler.dev)
+See the [open issues](https://github.com/blindgr2/CryptoSniper/issues) for a full list of proposed features (and known issues).
 
-<hr>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+* Install dependencies.
+  ```sh
+  npm install
+  ```
+* Compile
+  ```sh
+  npm run prepack && npm run pkg
+  ```
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Telegram- [@blindgr](https://t.me/blindgr)
+
+Telegram Community- [@deficoders](https://t.me/deficoders)
+
+Project Link: [https://github.com/blindgr2/CryptoSniper](https://github.com/blindgr2/CryptoSniper)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAIRUSE -->
 ## Fair Use Act Disclaimer
 
 This software is for educational purposes only.
@@ -429,3 +548,56 @@ Fair use is a use permitted by copyright statute that might otherwise be infring
 ### Fair Use Definition
 
 Fair use is a doctrine in United States copyright law that allows limited use of copyrighted material without requiring permission from the rights holders, such as commentary, criticism, news reporting, research, teaching or scholarship. It provides for the legal, non-licensed citation or incorporation of copyrighted material in another author’s work under a four-factor balancing test.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<div align="center">
+
+[![Winter is Coming][winteriscoming-shield]]()
+
+[![Works on my Machine!][worksonmymachine-shield]]()
+
+</div>
+
+<!-- ACKNOWLEDGMENTS
+Acknowledgments
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/blindgr2/CryptoSniper.svg?style=for-the-badge
+[contributors-url]: https://github.com/blindgr2/CryptoSniper/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/blindgr2/CryptoSniper.svg?style=for-the-badge
+[forks-url]: https://github.com/blindgr2/CryptoSniper/network/members
+[stars-shield]: https://img.shields.io/github/stars/blindgr2/CryptoSniper.svg?style=for-the-badge
+[stars-url]: https://github.com/blindgr2/CryptoSniper/stargazers
+[issues-shield]: https://img.shields.io/github/issues/blindgr2/CryptoSniper.svg?style=for-the-badge
+[issues-url]: https://github.com/blindgr2/CryptoSniper/issues
+[release-shield]: https://img.shields.io/github/v/release/blindgr2/CryptoSniper.svg?style=for-the-badge
+[release-url]: https://github.com/blindgr2/CryptoSniper/releases/latest
+[downloads-shield]: https://img.shields.io/github/downloads/blindgr2/CryptoSniper/total.svg?style=for-the-badge
+[workflow-shield]: https://img.shields.io/github/workflow/status/blindgr2/CryptoSniper/Build%20Binaries.svg?style=for-the-badge
+[workflow-url]: https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml
+[license-shield]: https://img.shields.io/github/license/blindgr2/CryptoSniper.svg?style=for-the-badge
+[license-url]: https://github.com/blindgr2/CryptoSniper/blob/master/LICENSE.txt
+[telegram-shield]: https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white
+[telegram-url]: https://t.me/deficoders
+[oclif-shield]: https://img.shields.io/badge/cli-oclif-brightgreen.svg?style=for-the-badge
+[oclif-url]: https://oclif.io/
+[love-shield]: https://ForTheBadge.com/images/badges/built-with-love.svg
+[javascript-shield]: https://forthebadge.com/images/badges/made-with-javascript.svg
+[typescript-shield]: https://forthebadge.com/images/badges/made-with-typescript.svg
+[opensource-shield]: https://forthebadge.com/images/badges/open-source.svg
+[winteriscoming-shield]: https://forthebadge.com/images/badges/winter-is-coming.svg
+[worksonmymachine-shield]: https://forthebadge.com/images/badges/works-on-my-machine.svg
