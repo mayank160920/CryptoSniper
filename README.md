@@ -73,35 +73,35 @@ Binaries are available for Linux (x64, arm), macOS (x64, arm), and Windows (x64)
 
 Open Terminal.
 
-`curl -L https://github.com/blindgr2/CryptoSniper/releases/latest/download/CryptoSniper-linux-x64 -o CryptoSniper`
+`curl -L https://github.com/blindgr2/CryptoSniper/releases/latest/download/cryptosniper-linux-x64 -o cryptosniper`
 
-`chmod +x CryptoSniper`
+`chmod +x cryptosniper`
 </details>
 
 <details><summary>macOS</summary>
 
 Open Terminal.
 
-`curl -L https://github.com/blindgr2/CryptoSniper/releases/latest/download/CryptoSniper-macos-x64 -o CryptoSniper`
+`curl -L https://github.com/blindgr2/CryptoSniper/releases/latest/download/cryptosniper-macos-x64 -o cryptosniper`
 
-`chmod +x CryptoSniper`
+`chmod +x cryptosniper`
 
-If you try to run `./CryptoSniper` at this point, you will get a message that macOS has blocked it.
+If you try to run `./cryptosniper` at this point, you will get a message that macOS has blocked it.
 
 To fix that, go to System Preferences and click Security & Privacy. Click the Open Anyway button in the General pane.
 
 <img src="https://user-images.githubusercontent.com/100382691/156895989-cee7cc92-6c79-4c8d-81d6-f561d3e63df9.png" width="500">
 
-Now you should be able to execute `./CryptoSniper` in your Terminal.
+Now you should be able to execute `./cryptosniper` in your Terminal.
 </details>
 
 <details><summary>Windows</summary>
 
 Download the latest Windows release.
 
-https://github.com/blindgr2/CryptoSniper/releases/latest/download/CryptoSniper-win-x64.exe
+https://github.com/blindgr2/CryptoSniper/releases/latest/download/cryptosniper-win-x64.exe
 
-After downloading, you can optionally rename it from "CryptoSniper-win-64" to CryptoSniper. It will work either way.
+After downloading, you can optionally rename it from "cryptosniper-win-64" to cryptosniper. It will work either way.
 
 **If you get a message that CryptoSniper was blocked by SmartScreen/Defender:**
 
@@ -132,13 +132,13 @@ In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where
 
 ` cd ~/Downloads`
 
-Configure your wallet by using the CLI or by editing the ~/Documents/CryptoSniper-cofigs/wallets.json file.
+Configure your wallet by using the CLI or by editing the ~/Documents/CryptoSniper-configs/wallets.json file.
 
-`./CryptoSniper wallet private_key [paste key]`
+`./cryptosniper wallet private_key [paste key]`
 
 Start CryptoSniper.
 
-`./CryptoSniper start`
+`./cryptosniper start`
 </details>
 
 <hr>
@@ -259,20 +259,20 @@ To do so, you would need to provide API parameters of your account. Follow these
 <details><summary><b>CLI Commands</b></summary>
 
 <!-- commands -->
-* [`CryptoSniper autocomplete [SHELL]`](#cryptosniper-autocomplete-shell)
-* [`CryptoSniper config [KEY] [VALUE]`](#cryptosniper-config-key-value)
-* [`CryptoSniper help [COMMAND]`](#cryptosniper-help-command)
-* [`CryptoSniper nodes [KEY] [VALUE]`](#cryptosniper-nodes-key-value)
-* [`CryptoSniper start`](#cryptosniper-start)
-* [`CryptoSniper wallet [KEY] [VALUE]`](#cryptosniper-wallet-key-value)
+* [`cryptosniper autocomplete [SHELL]`](#cryptosniper-autocomplete-shell)
+* [`cryptosniper config [KEY] [VALUE]`](#cryptosniper-config-key-value)
+* [`cryptosniper help [COMMAND]`](#cryptosniper-help-command)
+* [`cryptosniper nodes [KEY] [VALUE]`](#cryptosniper-nodes-key-value)
+* [`cryptosniper start`](#cryptosniper-start)
+* [`cryptosniper wallet [KEY] [VALUE]`](#cryptosniper-wallet-key-value)
 
-## `CryptoSniper autocomplete [SHELL]`
+## `cryptosniper autocomplete [SHELL]`
 
 display autocomplete installation instructions
 
 ```
 USAGE
-  $ CryptoSniper autocomplete [SHELL] [-r]
+  $ cryptosniper autocomplete [SHELL] [-r]
 
 ARGUMENTS
   SHELL  shell type
@@ -284,24 +284,24 @@ DESCRIPTION
   display autocomplete installation instructions
 
 EXAMPLES
-  $ CryptoSniper autocomplete
+  $ cryptosniper autocomplete
 
-  $ CryptoSniper autocomplete bash
+  $ cryptosniper autocomplete bash
 
-  $ CryptoSniper autocomplete zsh
+  $ cryptosniper autocomplete zsh
 
-  $ CryptoSniper autocomplete --refresh-cache
+  $ cryptosniper autocomplete --refresh-cache
 ```
 
 _See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.3.0/src/commands/autocomplete/index.ts)_
 
-## `CryptoSniper config [KEY] [VALUE]`
+## `cryptosniper config [KEY] [VALUE]`
 
 manage configuration
 
 ```
 USAGE
-  $ CryptoSniper config [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper config [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (amt_mode|amount|slippage|mempool_block_delay|iteration|gas_price|priority_gas|honeypot_check|block_severe_fee|
@@ -318,13 +318,13 @@ DESCRIPTION
 
 _See code: [dist/commands/config.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/config.ts)_
 
-## `CryptoSniper help [COMMAND]`
+## `cryptosniper help [COMMAND]`
 
 Display help for CryptoSniper.
 
 ```
 USAGE
-  $ CryptoSniper help [COMMAND] [-n]
+  $ cryptosniper help [COMMAND] [-n]
 
 ARGUMENTS
   COMMAND  Command to show help for.
@@ -338,13 +338,13 @@ DESCRIPTION
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
-## `CryptoSniper nodes [KEY] [VALUE]`
+## `cryptosniper nodes [KEY] [VALUE]`
 
 manage EVM node configuration
 
 ```
 USAGE
-  $ CryptoSniper nodes [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper nodes [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (eth.websockets|eth.rpc|eth_rinkeby.websockets|eth_rinkeby.rpc|cro.websockets|cro.rpc|bsc.websockets|bsc.rpc|ma
@@ -361,30 +361,30 @@ DESCRIPTION
 
 _See code: [dist/commands/nodes.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/nodes.ts)_
 
-## `CryptoSniper start`
+## `cryptosniper start`
 
 run bot
 
 ```
 USAGE
-  $ CryptoSniper start
+  $ cryptosniper start
 
 DESCRIPTION
   run bot
 
 EXAMPLES
-  $ CryptoSniper start
+  $ cryptosniper start
 ```
 
 _See code: [dist/commands/start.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/start.ts)_
 
-## `CryptoSniper wallet [KEY] [VALUE]`
+## `cryptosniper wallet [KEY] [VALUE]`
 
 add or remove wallet
 
 ```
 USAGE
-  $ CryptoSniper wallet [KEY] [VALUE] [-h] [-d]
+  $ cryptosniper wallet [KEY] [VALUE] [-h] [-d]
 
 ARGUMENTS
   KEY    (private_key|additional_private_keys)

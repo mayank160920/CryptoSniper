@@ -1,5 +1,5 @@
 // @ts-expect-error ts-migrate(7016) FIXME: Could not find a declaration file for module 'node... Remove this comment to see the full error message
-import fetch from 'node-fetch'
+import nodeFetch from 'node-fetch'
 import {
   fileLogger,
 } from '../winston/index'
@@ -27,7 +27,7 @@ export const fetchTrustWalletTokens = (G: any) => {
     }
 
     const l: any = []
-    if (J) fetch(J).then((X: any) => {
+    if (J) nodeFetch(J).then((X: any) => {
       if (X.ok) X.json().then((u: any) => {
         for (const E of u) {
           l.push(E)
@@ -75,7 +75,7 @@ export const checkForHoneypot = (G: any, D: any, J: any) => {
       break
     }
 
-    if (u) fetch('https://honeypot.api.rugdoc.io/api/honeypotStatus.js?address=' + G + '&chain=' + u).then((E: any) => {
+    if (u) nodeFetch('https://honeypot.api.rugdoc.io/api/honeypotStatus.js?address=' + G + '&chain=' + u).then((E: any) => {
       if (E.ok) E.json().then((s: any) => {
         if (s.status === 'UNKNOWN') return resolve('The status of this token is unknown.')
         else {
@@ -113,7 +113,7 @@ export const checkForHoneypot = (G: any, D: any, J: any) => {
 
 export const fetchBinancePrice = (G: any) => {
   return new Promise(resolve => {
-    fetch('https://api.binance.com/api/v3/ticker/price?symbol=' + G).then((J: any) => {
+    nodeFetch('https://api.binance.com/api/v3/ticker/price?symbol=' + G).then((J: any) => {
       if (J.ok) J.json().then((l: any) => {
         return resolve(l.price)
       })

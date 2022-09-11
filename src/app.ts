@@ -161,7 +161,7 @@ const preloadEthereum = () => {
     spinner.stop()
     printErrorHeading('MISCONFIGURED WALLET')
     printReason(error)
-    printInfoLine('Command','CryptoSniper wallet private_key [key]')
+    printInfoLine('Command','cryptosniper wallet private_key [key]')
     printLocation(getCoreLocation('wallets.json'))
 
     confirmReload().then(() => {
