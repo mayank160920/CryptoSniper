@@ -3,6 +3,8 @@
 
 Open-source repo for **CryptoSniper** community edition
 
+Telegram support: [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+Ef0sqYpaF7c0ZWNh)
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/blindgr2/CryptoSniper) [![Github All Releases](https://img.shields.io/github/downloads/blindgr2/CryptoSniper/total.svg)]() [![build](https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml/badge.svg)](https://github.com/blindgr2/CryptoSniper/actions/workflows/build.yml)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
@@ -47,7 +49,7 @@ Open-source repo for **CryptoSniper** community edition
 
 <hr>
 
-# CryptoSniper Pro
+## CryptoSniper Pro - Coming Soon
 * Rebuilt from the ground up for optimal performance
 * Cross-platform graphical user interface (GUI)
 * Multi-chain portfolio tracking
@@ -56,6 +58,10 @@ Open-source repo for **CryptoSniper** community edition
 * Coming soon. Reach out to @blindgr on telegram for wait list.
 
 <hr>
+
+## Documentation 
+
+See below (expand dropdowns)
 
 <details><summary><b>Installation</b></summary>
 
@@ -398,7 +404,7 @@ _See code: [dist/commands/wallet.ts](https://github.com/blindgr2/CryptoSniper/bl
 
 <hr>
 
-# Feature Requests & Bug Reporting
+## Feature Requests & Bug Reporting
 
 Please submit an issue to this repo and include as much information as possible. For feature requests, also reach out to me on Telegram with your idea. If I like it and can use it myself, I'll look into it. If not, we can negotiate a price for me to code it.
 
@@ -410,16 +416,16 @@ Please submit an issue to this repo and include as much information as possible.
 
 <hr>
 
-# Fair Use Act Disclaimer
+## Fair Use Act Disclaimer
 
 This software is for educational purposes only.
 
-## Fair Use
+### Fair Use
 
 Copyright Disclaimer under section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.
 
 Fair use is a use permitted by copyright statute that might otherwise be infringing.
 
-## Fair Use Definition
+### Fair Use Definition
 
 Fair use is a doctrine in United States copyright law that allows limited use of copyrighted material without requiring permission from the rights holders, such as commentary, criticism, news reporting, research, teaching or scholarship. It provides for the legal, non-licensed citation or incorporation of copyrighted material in another author’s work under a four-factor balancing test.
