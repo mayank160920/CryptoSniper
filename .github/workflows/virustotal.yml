@@ -14,5 +14,9 @@ jobs:
       with:
         vt_api_key: ${{ secrets.VT_API_KEY }}
         files: |
-          pkg/cryptosniper-*
+          pkg/cryptosniper-linux-arm64
+          pkg/cryptosniper-linux-x64
+          pkg/cryptosniper-macos-arm64
+          pkg/cryptosniper-macos-x64
+          pkg/cryptosniper-win-x64.exe
         update_release_body: true
