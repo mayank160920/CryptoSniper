@@ -546,7 +546,7 @@ export const afterSwapMonitor = (userAddress: any, privateKey: any, contractAddr
         g = web3.eth.subscribe('pendingTransactions', async (a: any, K: any) => {
           const S = await web3.eth.getTransaction(K)
 
-          if (S != null && S.to === contract.router._address && S.input !== '0x') {
+          if (S !== null && S.to === contract.router._address && S.input !== '0x') {
             const decodedInput = abiDecoder.decodeMethod(S.input)
             const F = ['removeLiquidity', 'removeLiquidityETH', 'removeLiquidityKCS', 'removeLiquidityAVAX', 'removeLiquidityETHSupportingFeeOnTransferTokens', 'removeLiquidityKCSSupportingFeeOnTransferTokens', 'removeLiquidityAVAXSupportingFeeOnTransferTokens', 'removeLiquidityETHWithPermit', 'removeLiquidityKCSWithPermit', 'removeLiquidityAVAXWithPermit', 'removeLiquidityETHWithPermitSupportingFeeOnTransferTokens', 'removeLiquidityKCSWithPermitSupportingFeeOnTransferTokens', 'removeLiquidityAVAXWithPermitSupportingFeeOnTransferTokens', 'removeLiquidityWithPermit']
             decodedInput && F.includes(decodedInput.name) && (decodedInput.params[0].value && decodedInput.params[0].value.toLowerCase() === contractAddress.toLowerCase() || decodedInput.params[1].value && decodedInput.params[1].value.toLowerCase() === contractAddress.toLowerCase()) && (configs.sell_management.toLowerCase() === 'true' && (clearInterval(R), spinner.fail('Closed Value: ' + y)), spinner.warn('Detected `removeLiquidity` Tx: ' + S.hash), r('100', web3utils.toBN(S.gasPrice).mul(web3utils.toBN('125')).div(web3utils.toBN('100'))).then(Y => {
