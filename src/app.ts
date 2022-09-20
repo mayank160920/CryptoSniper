@@ -94,7 +94,7 @@ let chain: any
 let exchange: any
 let exchangeName: any
 
-export async function start() {
+export  function start() {
   castFiglet(Package.name.toUpperCase()).then(G => {
     printMainHeader(G, Package.version)
     printErrorHeading('DISCLAIMER')
@@ -614,7 +614,7 @@ const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
 
     printHeading(' Fastest Alerts')
 
-    fastestAlertsTelegramConfiguration().then(async u => {
+    fastestAlertsTelegramConfiguration().then( u => {
       const spinner = ora({text: ('Listening'), spinner: 'aesthetic'})
       const E: any = []
       let contractAddress: any
