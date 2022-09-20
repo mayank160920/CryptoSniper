@@ -1,6 +1,11 @@
 version = 1
 
+environment = ["nodejs"]
+
+exclude_patterns = [
+  "src/commands/**",
+]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
-environment = ["nodejs"]
