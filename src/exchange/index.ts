@@ -712,7 +712,7 @@ export const afterSwapMonitor = (userAddress: any, privateKey: any, contractAddr
   })
 }
 
-export const watchMempool = async (contractAddress: any, blockDelay: any) => {
+export const watchMempool =  (contractAddress: any, blockDelay: any) => {
   return new Promise<void>(resolve => {
     const spinner = ora({spinner: 'aesthetic'}).start("Waiting for add liquitidy transactions...")
     let count = 0
