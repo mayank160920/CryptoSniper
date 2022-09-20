@@ -37,5 +37,5 @@ export const fileLogger = createLogger({
 
 export const somethingWentWrong = () => {
   return console.log('Something went wrong...')
-  process.exit()
+  
 }
