@@ -142,7 +142,7 @@ const nodeSchema = {
     properties: {
       websockets: {
         type: 'string',
-        default: 'wss://bsc-ws-node.nariox.org:443',
+        default: 'wss://bsc-mainnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3',
       },
       rpc: {
         type: 'string',
@@ -214,6 +214,9 @@ export const nodeConfig = new Conf({
   migrations: {
 		'0.3.2': (store: { set: (arg0: string, arg1: string) => void; }) => {
 			store.set('avax.websockets', 'https://rpc.ankr.com/avalanche');
+    },
+    '1.1.7': (store: { set: (arg0: string, arg1: string) => void; }) => {
+			store.set('bsc.websockets', 'wss://bsc-mainnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3');
     },
 	},
   // @ts-expect-error ts-migrate(2554) FIXME: Expected 1 arguments, but got 0.
