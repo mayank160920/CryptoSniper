@@ -89,7 +89,7 @@ const Package = {
 
 let settings: any
 let configs: any
-let telegram: any
+let telegramAPI: any
 let chain: any
 let exchange: any
 let exchangeName: any
@@ -113,7 +113,7 @@ export  function start() {
 const initializeFiles = () => {
   settings = walletConfig.store
   configs = config.store
-  telegram = config.get('telegram')
+  telegramAPI = config.get('telegram')
   return chainSelection()
 }
 
@@ -493,20 +493,20 @@ const dxPinkPresaleBot = (menuOption: any) => {
 }
 
 const telegramScanner = () => {
-  validateTelegram(telegram).then(() => {
+  validateTelegram(telegramAPI).then(() => {
     printHeading('Telegram Scanner')
 
-    fetchTrustWalletTokens(chain).then(D => {
-      telegramScannerInput().then(J => {
+    fetchTrustWalletTokens(chain).then(G => {
+      const D = G
+      telegramScannerInput().then(input => {
         // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
-        if (J.toLowerCase() === 'c') return bootstrapExchange()
+        if (input.toLowerCase() === 'c') return bootstrapExchange()
 
         const spinner = ora({text: ('Listening'), spinner: 'aesthetic'})
         let contractAddress: any
         let u: any
-        initializeTelegram(telegram, J, async (E: any) => {
+        initializeTelegram(telegramAPI, input, async (E: any) => {
           if (typeof E === 'object') return u = E
-
           if (!contractAddress) {
             spinner.info(E ? 'Received Message: { ' + E + ' }' : '< Service Message/Media File >')
             spinner.start()
@@ -545,7 +545,7 @@ const telegramScanner = () => {
     printLocation(getCoreLocation('config.json'))
 
     confirmReload().then(() => {
-      telegram = config.get('telegram')
+      telegramAPI = config.get('telegram')
       return telegramScanner()
     })
   })
@@ -590,21 +590,21 @@ const mempoolInputAddress = () => {
 }
 
 const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
-  validateTelegram(telegram).then(() => {
+  validateTelegram(telegramAPI).then(() => {
     const listing = {
       name: '',
-      telegram: '',
+      channel: '',
     }
 
     switch (menuOption) {
     case 30:
       listing.name = 'CoinMarketCap'
-      listing.telegram = 'CMC_fastest_alerts'
+      listing.channel = 'CMC_fastest_alerts'
       break
 
     case 40:
       listing.name = 'CoinGecko'
-      listing.telegram = 'CG_fastest_alerts'
+      listing.channel = 'CG_fastest_alerts'
       break
 
     default:
@@ -619,7 +619,7 @@ const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
       const E: any = []
       let contractAddress: any
       let j: any
-      return initializeTelegram(telegram, 'https://t.me/' + listing.telegram, async (x: any) => {
+      return initializeTelegram(telegramAPI, 'https://t.me/' + listing.channel, async (x: any) => {
         if (typeof x === 'object') return j = x
 
         if (!contractAddress) {
@@ -659,7 +659,7 @@ const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
     printLocation(getCoreLocation('config.json'))
 
     confirmReload().then(() => {
-      telegram = config.get('telegram')
+      telegramAPI = config.get('telegram')
       return fastestAlertsTelegram(menuOption, menuSelection)
     })
   })
