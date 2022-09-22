@@ -215,7 +215,7 @@ export const nodeConfig = new Conf({
 		'0.3.2': (store: { set: (arg0: string, arg1: string) => void; }) => {
 			store.set('avax.websockets', 'https://rpc.ankr.com/avalanche');
     },
-    '1.1.7': (store: { set: (arg0: string, arg1: string) => void; }) => {
+    '1.2.0': (store: { set: (arg0: string, arg1: string) => void; }) => {
 			store.set('bsc.websockets', 'wss://bsc-mainnet.nodereal.io/ws/v1/64a9df0874fb4a93b9d0a3849de012d3');
     },
 	},

@@ -381,7 +381,7 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.2.0/src/commands/config.ts)_
 
 ## `cryptosniper help [COMMAND]`
 
@@ -424,7 +424,7 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.2.0/src/commands/nodes.ts)_
 
 ## `cryptosniper start`
 
@@ -441,7 +441,7 @@ EXAMPLES
   $ cryptosniper start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.2.0/src/commands/start.ts)_
 
 ## `cryptosniper wallet [KEY] [VALUE]`
 
@@ -463,7 +463,7 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.1.4/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/blindgr2/CryptoSniper/blob/v1.2.0/src/commands/wallet.ts)_
 <!-- commandsstop -->
 </details>
 

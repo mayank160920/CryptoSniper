@@ -84,7 +84,7 @@ import {config, walletConfig} from './config/index'
 
 const Package = {
   name: 'CryptoSniper',
-  version: '1.1.6',
+  version: '1.2.0',
 }
 
 let settings: any
