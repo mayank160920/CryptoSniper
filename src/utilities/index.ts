@@ -46,10 +46,10 @@ export const validateConfigs = async (configs: any, chain: any) => {
   })
 }
 
-export const validateTelegram = (G: any) => {
+export const validateTelegram = (telegramAPI: any) => {
   return new Promise((resolve, reject) => {
-    if (G.API_ID === '') return reject('The `API_ID` is missing.')
-    if (G.API_HASH === '') return reject('The `API_HASH` is missing.')
+    if (telegramAPI.api_id === '') return reject('The `api_id` is missing.')
+    if (telegramAPI.api_hash === '') return reject('The `api_hash` is missing.')
     // @ts-expect-error ts-migrate(2794) FIXME: Expected 1 arguments, but got 0. Did you forget to... Remove this comment to see the full error message
     return resolve()
   })

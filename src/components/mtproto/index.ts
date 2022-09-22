@@ -1,5 +1,5 @@
 // @ts-expect-error ts-migrate(7016) FIXME: Could not find a declaration file for module '@mtp... Remove this comment to see the full error message
-import {MTProto, MTProtoError} from '@mtproto/core'
+import MTProto from '@mtproto/core'
 import {
   sleep,
 // @ts-expect-error ts-migrate(7016) FIXME: Could not find a declaration file for module '@mtp... Remove this comment to see the full error message
@@ -11,10 +11,10 @@ import {
 export class MTProtoAPI {
     ['class'];
 
-    constructor(G: any) {
+    constructor(telegramAPI: any) {
       this.class = new MTProto({
-        api_id: G.API_ID,
-        api_hash: G.API_HASH,
+        api_id: telegramAPI.api_id,
+        api_hash: telegramAPI.api_hash,
         storageOptions: {
           path: getCoreLocation('session.json'),
         },
@@ -25,7 +25,7 @@ export class MTProtoAPI {
     async ['call'](method: string, params, options = {}) {
       try {
         return await this.class.call(method, params, options)
-      } catch (error: Error | MTProtoError) {
+      } catch (error: any) {
         const {
           error_code,
           error_message,
@@ -37,21 +37,19 @@ export class MTProtoAPI {
 
           type === 'PHONE' ? await this.class.setDefaultDc(dcId) : Object.assign(options, {
             dcId: dcId,
-          })
-
-          return this.call(method, params, options)
+          }), this.call(method, params, options)
         }
 
         if (error_code === 420) return await sleep(Number(error_message.split('FLOOD_WAIT_')[1]) * 1000), this.call(method, params, options)
-        throw error
+        return Promise.reject(error)
       }
     }
 
-    ['startListenToUpdates'](G: any) {
-      this.class.updates.on('updates', G)
-      this.class.updates.on('updateShortChatMessage', G)
-      this.class.updates.on('updateShortMessage', G)
-      this.class.updates.on('updateShortSentMessage', G)
+    ['startListenToUpdates'](telegramAPI: any) {
+      this.class.updates.on('updates', telegramAPI)
+      this.class.updates.on('updateShortChatMessage', telegramAPI)
+      this.class.updates.on('updateShortMessage', telegramAPI)
+      this.class.updates.on('updateShortSentMessage', telegramAPI)
     }
 
     ['stopListenToUpdate']() {
