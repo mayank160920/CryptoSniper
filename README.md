@@ -200,9 +200,19 @@ In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where
 
 ` cd ~/Downloads`
 
-Configure your wallet by using the CLI or by editing the ~/Documents/CryptoSniper-configs/wallets.json file.
+Configure your wallet by using the CLI commands below.
+
+OR 
+
+Run CryptoSniper one time to generate the config files in your "Documents/CryptoSniper-configs" folder. Then manually add your private key to the wallets.json file.
+
+#### Linux/macOS
 
 `./cryptosniper wallet private_key [paste key]`
+
+#### Windows
+
+`cryptosniper wallet private_key [paste key]`
 
 Start CryptoSniper.
 
