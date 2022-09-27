@@ -70,68 +70,66 @@ export const runSecondaryLatencyTests = () => {
   })
 }
 
-const runLatencyTests = (G: any) => {
+const runLatencyTests = (node: any) => {
   return new Promise(resolve => {
-    let J = 0
+    let iteration = 0
 
-    const l: any = []
+    const tests: any = []
 
-    const X = () => {
-      const E = new net.Socket()
-      const s = process.hrtime()
-      const j = new URL(G).hostname
-      const x = new URL(G).port ? Number(new URL(G).port) : 443
+    const run = () => {
+      const client = new net.Socket()
+      const start = process.hrtime()
+      const host = new URL(node).hostname
+      const port = new URL(node).port ? Number(new URL(node).port) : 443
 
-      E.connect(x, j, () => {
-        const Q = process.hrtime(s)
-        const p = (Q[0] * 1000000000 + Q[1]) / 1000000
+      client.connect(port, host, () => {
+        const end = process.hrtime(start)
+        const duration = (end[0] * 1000000000 + end[1]) / 1000000
 
-        l.push({
-          seq: J,
-          time: p,
+        tests.push({
+          seq: iteration,
+          time: duration,
         })
 
-        E.destroy()
-        J++
-        u()
+        client.destroy()
+        iteration++
+        result()
       })
 
-      E.on('error', Q => {
-        l.push({
-          seq: J,
+      client.on('error', end => {
+        tests.push({
+          seq: iteration,
           time: 'error',
-          error: Q,
+          error: end,
         })
 
-        E.destroy()
-        J++
-        u()
+        client.destroy()
+        iteration++
+        result()
       })
 
-      E.setTimeout(1500, () => {
-        l.push({
-          seq: J,
+      client.setTimeout(1500, () => {
+        tests.push({
+          seq: iteration,
           time: 'error',
           error: 'timeout',
         })
 
-        E.destroy()
-        J++
-        u()
+        client.destroy()
+        iteration++
+        result()
       })
     }
 
-    const u = () => {
-      if (J < 10) X()
+    const result = () => {
+      if (iteration < 10) run()
       else return resolve({
-        // @ts-expect-error ts-migrate(7006) FIXME: Parameter 'E' implicitly has an 'any' type.
-        max: l.reduce((E, s) => E > s.time ? E : s.time, l[0].time),
-        // @ts-expect-error ts-migrate(7006) FIXME: Parameter 'E' implicitly has an 'any' type.
-        min: l.reduce((E, s) => E < s.time ? E : s.time, l[0].time),
+        max: tests.reduce((client: number, start: { time: number }) => client > start.time ? client : start.time, tests[0].time),
+        min: tests.reduce((client: number, start: { time: number }) => client < start.time ? client : start.time, tests[0].time),
       })
     }
 
-    X()
+    run()
   })
 }
 
