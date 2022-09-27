@@ -3,7 +3,7 @@ import {
   getSecondary,
 } from '../ethereum/index'
 
-export const fetchPresaleContract = (contractAddress: any, menuOption: any) => {
+export const fetchPresaleContract = (contractAddress: any, menuOption: number) => {
   return new Promise((resolve, reject) => {
     const X = getSecondary()
     let u: any

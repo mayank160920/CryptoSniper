@@ -227,7 +227,7 @@ export const getAmountsOut = async (amount: any, D = native, J = usd): Promise<B
   return web3utils.toBN(result[1])
 }
 
-export const contributeToPresale = (userAddress: any, privateKey: any, presaleAddress: any, startTime: any, menuOption: any, configs: any, chain: any, amount: any) => {
+export const contributeToPresale = (userAddress: number, privateKey: number, presaleAddress: any, startTime: any, menuOption: number, configs: any, chain: any, amount: any) => {
   return new Promise(async (x, p) => {
     const spinner = ora({text: ('Pending'), spinner: 'aesthetic'}).start()
     const txConfig = chain !== 1 && chain !== 4 ? {
@@ -316,7 +316,7 @@ export const contributeToPresale = (userAddress: any, privateKey: any, presaleAd
   })
 }
 
-export const swapExactETHForTokens = (userAddress: any, privateKey: any, contractAddress: any, configs: any, chain: any, exchange: any) => {
+export const swapExactETHForTokens = (userAddress: number, privateKey: number, contractAddress: any, configs: any, chain: any, exchange: any) => {
   return new Promise(async (resolve, reject) => {
     const spinner = ora({text: ('Pending'), spinner: 'aesthetic'}).start()
     let iteration: any
@@ -465,7 +465,7 @@ export const swapExactETHForTokens = (userAddress: any, privateKey: any, contrac
   })
 }
 
-export const afterSwapMonitor = (userAddress: any, privateKey: any, contractAddress: any, configs: any, chain: any, exchange: any, menuSelection: any) => {
+export const afterSwapMonitor = (userAddress: number, privateKey: number, contractAddress: any, configs: any, chain: any, exchange: any, menuSelection: any) => {
   return new Promise(async (resolve, reject) => {
     let balance: any
     let decimals: any
@@ -770,7 +770,7 @@ export const watchMempool =  (contractAddress: any, blockDelay: any) => {
   })
 }
 
-export const predictionBotMethodology = (userAddress: any, privateKey: any, configs: any, menuOption: any, menuSelection: any) => {
+export const predictionBotMethodology = (userAddress: number, privateKey: number, configs: any, menuOption: number, menuSelection: any) => {
   return new Promise(async (s, j) => {
     const contractAddress = menuOption === 50 ? contract.predictionPcsBNB._address : (menuOption === 90 ? contract.predictionCgBTC._address : menuOption === 91 ? contract.predictionCgBNB._address : menuOption === 92 ? contract.predictionCgETH._address : null)
     const rounds = menuOption === 50 ? contract.predictionPcsBNB.methods.rounds : (menuOption === 90 ? contract.predictionCgBTC.methods.Rounds : menuOption === 91 ? contract.predictionCgBNB.methods.Rounds : menuOption === 92 ? contract.predictionCgETH.methods.Rounds : null)

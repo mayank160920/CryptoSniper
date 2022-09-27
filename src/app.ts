@@ -8,7 +8,6 @@ import {
   castFiglet,
 } from './components/figlet/index'
 import {
-  agreeDisclaimer,
   chainSelectionChoices,
   confirmProceed,
   confirmReload,
@@ -76,11 +75,10 @@ import {
 } from './telegram/index'
 import {
   getCoreLocation,
-  // validateConfigs,
   validateSettings,
   validateTelegram,
 } from './utilities/index'
-import {config, walletConfig} from './config/index'
+import { config, walletConfig } from './config/index'
 
 const Package = {
   name: 'CryptoSniper',
@@ -92,22 +90,10 @@ let configs: any
 let telegramAPI: any
 let chain: any
 let exchange: any
-let exchangeName: any
+let exchangeName: string
 
-export  function start() {
-  castFiglet(Package.name.toUpperCase()).then(G => {
-    printMainHeader(G, Package.version)
-    printErrorHeading('DISCLAIMER')
-    console.log('All investment strategies and investments involve risk of loss.')
-    console.log('By using CryptoSniper, you agree to accept all liabilities, and that')
-    console.log('no claims can be made against the developers.')
-    console.log('\ncryptosniper is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download CryptoSniper, you have been ' + chalk.red('SCAMMED') + '!')
-
-    agreeDisclaimer().then(() => {
-      initializeFiles()
-    })
-  })
+export function start() {
+  initializeFiles()
 }
 
 const initializeFiles = () => {
@@ -135,7 +121,7 @@ const chainSelection = () => {
 }
 
 const preloadEthereum = () => {
-  const spinner = ora({text: ('Connecting'), spinner: 'aesthetic'}).start()
+  const spinner = ora({ text: ('Connecting'), spinner: 'aesthetic' }).start()
   validateSettings(settings).then(() => {
     initializeWeb3(chain).then(nodeList => {
       initializeEthereum(nodeList).then(() => {
@@ -161,7 +147,7 @@ const preloadEthereum = () => {
     spinner.stop()
     printErrorHeading('MISCONFIGURED WALLET')
     printReason(error)
-    printInfoLine('Command','cryptosniper wallet private_key [key]')
+    printInfoLine('Command', 'cryptosniper wallet private_key [key]')
     printLocation(getCoreLocation('wallets.json'))
 
     confirmReload().then(() => {
@@ -174,57 +160,57 @@ const preloadEthereum = () => {
 const bootstrapExchange = () => {
   configs = config.store
   switch (exchange) {
-  case 'UNI':
-    exchangeName = 'Uniswap'
-    break
+    case 'UNI':
+      exchangeName = 'Uniswap'
+      break
 
-  case 'SUSHI':
-    exchangeName = 'SushiSwap'
-    break
+    case 'SUSHI':
+      exchangeName = 'SushiSwap'
+      break
 
-  case 'PANCAKE':
-    exchangeName = 'PancakeSwap'
-    break
+    case 'PANCAKE':
+      exchangeName = 'PancakeSwap'
+      break
 
-  case 'APE':
-    exchangeName = 'ApeSwap'
-    break
+    case 'APE':
+      exchangeName = 'ApeSwap'
+      break
 
-  case 'CANDLE':
-    exchangeName = 'Candle Genie'
-    break
+    case 'CANDLE':
+      exchangeName = 'Candle Genie'
+      break
 
-  case 'QUICK':
-    exchangeName = 'QuickSwap'
-    break
+    case 'QUICK':
+      exchangeName = 'QuickSwap'
+      break
 
-  case 'SPOOKY':
-    exchangeName = 'SpookySwap'
-    break
+    case 'SPOOKY':
+      exchangeName = 'SpookySwap'
+      break
 
-  case 'SPIRIT':
-    exchangeName = 'SpiritSwap'
-    break
+    case 'SPIRIT':
+      exchangeName = 'SpiritSwap'
+      break
 
-  case 'KOFFEE':
-    exchangeName = 'KoffeeSwap'
-    break
+    case 'KOFFEE':
+      exchangeName = 'KoffeeSwap'
+      break
 
-  case 'KU':
-    exchangeName = 'KuSwap'
-    break
+    case 'KU':
+      exchangeName = 'KuSwap'
+      break
 
-  case 'TRADER':
-    exchangeName = 'Trader Joe'
-    break
+    case 'TRADER':
+      exchangeName = 'Trader Joe'
+      break
 
-  case 'LAUNCH':
-    exchangeName = 'Launchpad'
-    break
+    case 'LAUNCH':
+      exchangeName = 'Launchpad'
+      break
 
-  default:
-    exchangeName = ''
-    break
+    default:
+      exchangeName = ''
+      break
   }
 
   castFiglet(exchangeName).then(D => {
@@ -250,41 +236,41 @@ const parseChainDetails = async () => {
   let chainName
 
   switch (chain) {
-  case 1:
-    chainName = 'Ethereum Mainnet'
-    break
+    case 1:
+      chainName = 'Ethereum Mainnet'
+      break
 
-  case 4:
-    chainName = 'Rinkeby Test Network'
-    break
+    case 4:
+      chainName = 'Rinkeby Test Network'
+      break
 
-  case 25:
-    chainName = 'Cronos Mainnet'
-    break
+    case 25:
+      chainName = 'Cronos Mainnet'
+      break
 
-  case 56:
-    chainName = 'Binance Smart Chain'
-    break
+    case 56:
+      chainName = 'Binance Smart Chain'
+      break
 
-  case 137:
-    chainName = 'Polygon Mainnet'
-    break
+    case 137:
+      chainName = 'Polygon Mainnet'
+      break
 
-  case 250:
-    chainName = 'Fantom Opera'
-    break
+    case 250:
+      chainName = 'Fantom Opera'
+      break
 
-  case 321:
-    chainName = 'KCC Mainnet'
-    break
+    case 321:
+      chainName = 'KCC Mainnet'
+      break
 
-  case 43114:
-    chainName = 'Avalanche Mainnet'
-    break
+    case 43114:
+      chainName = 'Avalanche Mainnet'
+      break
 
-  default:
-    chainName = ''
-    break
+    default:
+      chainName = ''
+      break
   }
 
   printHeading('Chain Details')
@@ -343,7 +329,7 @@ const exchangeMenu = () => {
         printReason('PinkSale does not support Fantom Opera.')
         temporaryUnavailable().then(() => bootstrapExchange())
       } else
-      // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
+        // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
         return estimatedSpendingRouter(menu.option)
     } else {
       // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
@@ -360,7 +346,7 @@ const exchangeMenu = () => {
 
 const latencyPingTests = async () => {
   printHeading('Latency Ping Tests')
-  const spinner = ora({text: ('Pinging'), spinner: 'aesthetic'}).start()
+  const spinner = ora({ text: ('Pinging'), spinner: 'aesthetic' }).start()
   const D = await runPrimaryLatencyTests()
   const J = await runSecondaryLatencyTests()
   spinner.stop()
@@ -370,7 +356,7 @@ const latencyPingTests = async () => {
   confirmReload().then(() => bootstrapExchange())
 }
 
-const estimatedSpendingRouter = async (menuOption: any, menuSelection = 0) => {
+const estimatedSpendingRouter = async (menuOption: number, menuSelection = 0) => {
   printHeading('Estimated Spending')
   let J
   let l
@@ -411,13 +397,13 @@ const estimatedSpendingRouter = async (menuOption: any, menuSelection = 0) => {
   }).catch(() => bootstrapExchange())
 }
 
-const dxPinkPresaleBot = (menuOption: any) => {
+const dxPinkPresaleBot = (menuOption: number) => {
   printHeading((menuOption === 60 ? 'DxSale' : 'PinkSale') + ' Presale Sniper')
 
   contractAddressInput('Presale').then(async contractAddress => {
     // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
     if (contractAddress.length === 42) {
-      const spinner = ora({text: ('Loading'), spinner: 'aesthetic'}).start()
+      const spinner = ora({ text: ('Loading'), spinner: 'aesthetic' }).start()
 
       try {
         await initializePresaleContract(contractAddress, menuOption).then(async l => {
@@ -502,8 +488,8 @@ const telegramScanner = () => {
         // @ts-expect-error ts-migrate(2571) FIXME: Object is of type 'unknown'.
         if (input.toLowerCase() === 'c') return bootstrapExchange()
 
-        const spinner = ora({text: ('Listening'), spinner: 'aesthetic'})
-        let contractAddress: any
+        const spinner = ora({ text: ('Listening'), spinner: 'aesthetic' })
+        let contractAddress: number
         let u: any
         initializeTelegram(telegramAPI, input, async (E: any) => {
           if (typeof E === 'object') return u = E
@@ -514,7 +500,7 @@ const telegramScanner = () => {
             E && (await regexMessageForCa(E, D).then(s => {
               spinner.stop()
               printSubInfoLine('\nFound CA', s)
-              contractAddress = s
+              contractAddress = s as number
             }))
 
             if (contractAddress) {
@@ -589,7 +575,7 @@ const mempoolInputAddress = () => {
   })
 }
 
-const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
+const fastestAlertsTelegram = (menuOption: number, menuSelection: any) => {
   validateTelegram(telegramAPI).then(() => {
     const listing = {
       name: '',
@@ -597,25 +583,25 @@ const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
     }
 
     switch (menuOption) {
-    case 30:
-      listing.name = 'CoinMarketCap'
-      listing.channel = 'CMC_fastest_alerts'
-      break
+      case 30:
+        listing.name = 'CoinMarketCap'
+        listing.channel = 'CMC_fastest_alerts'
+        break
 
-    case 40:
-      listing.name = 'CoinGecko'
-      listing.channel = 'CG_fastest_alerts'
-      break
+      case 40:
+        listing.name = 'CoinGecko'
+        listing.channel = 'CG_fastest_alerts'
+        break
 
-    default:
-      fileLogger.error('CORE: fastestAlertsTelegram(): EOFError')
-      return somethingWentWrong()
+      default:
+        fileLogger.error('CORE: fastestAlertsTelegram(): EOFError')
+        return somethingWentWrong()
     }
 
     printHeading(' Fastest Alerts')
 
-    fastestAlertsTelegramConfiguration().then( u => {
-      const spinner = ora({text: ('Listening'), spinner: 'aesthetic'})
+    fastestAlertsTelegramConfiguration().then(u => {
+      const spinner = ora({ text: ('Listening'), spinner: 'aesthetic' })
       const E: any = []
       let contractAddress: any
       let j: any
@@ -665,7 +651,7 @@ const fastestAlertsTelegram = (menuOption: any, menuSelection: any) => {
   })
 }
 
-const predictionBot = (menuOption: any, menuSelection: any) => {
+const predictionBot = (menuOption: number, menuSelection: any) => {
   printHeading('Prediction Bot')
   console.log('The methodology behind the bot is to calculate the mathematical')
   console.log('expectation and bet strategically.')

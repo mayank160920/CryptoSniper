@@ -185,36 +185,36 @@ export const regexMessageForCa = (G: any, D = []) => {
     }
 
     G = G.replace(/[^\da-fx]/gi, '').toLowerCase()
-    const X = /outputcurrency=0x([\da-f]{40})\s?/i
-    const u = /tokens\/0x([\da-f]{40})\s?/i
-    const E = /0x([\da-f]{40})\s?/i
-    const s = /0x([\da-f]+)\s?/i
-    const j = /[\da-f]+\s?/i
-    let x = ''
+    const pattern1 = /outputcurrency=0x([\da-f]{40})\s?/i
+    const pattern2 = /tokens\/0x([\da-f]{40})\s?/i
+    const pattern3 = /0x([\da-f]{40})\s?/i
+    const pattern4 = /0x([\da-f]+)\s?/i
+    const pattern5 = /[\da-f]+\s?/i
+    let match: string
     let Q
-    if (X.test(G)) {
-      x = '0x' + G.match(X)[1]
+    if (pattern1.test(G)) {
+      match = '0x' + G.match(pattern1)[1]
       regexMessageForCa_memory = ''
     } else {
-      if (u.test(G)) {
-        x = '0x' + G.match(u)[1]
+      if (pattern2.test(G)) {
+        match = '0x' + G.match(pattern2)[1]
         regexMessageForCa_memory = ''
       } else {
-        if (E.test(G)) {
-          x = '0x' + G.match(E)[1]
+        if (pattern3.test(G)) {
+          match = '0x' + G.match(pattern3)[1]
           regexMessageForCa_memory = ''
         } else
-          s.test(G) && (regexMessageForCa_memory = '0x' + G.match(s)[1], Q = regexMessageForCa_memory)
+          pattern4.test(G) && (regexMessageForCa_memory = '0x' + G.match(s)[1], Q = regexMessageForCa_memory)
       }
     }
 
-    if (regexMessageForCa_memory && regexMessageForCa_memory !== Q && j.test(G)) {
-      regexMessageForCa_memory += G.match(j)[0]
-      if (regexMessageForCa_memory.length === 42) x = regexMessageForCa_memory
+    if (regexMessageForCa_memory && regexMessageForCa_memory !== Q && pattern5.test(G)) {
+      regexMessageForCa_memory += G.match(pattern5)[0]
+      if (regexMessageForCa_memory.length === 42) match = regexMessageForCa_memory
     }
 
     // @ts-expect-error ts-migrate(2339) FIXME: Property 'toLowerCase' does not exist on type 'nev... Remove this comment to see the full error message
-    x && (D.findIndex(U => x.toLowerCase() === U.toLowerCase()) === -1 || x.toLowerCase() === '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82') && isPrimaryContract(x).then(() => resolve(x)).catch(() => {
+    match && (D.findIndex(U => match.toLowerCase() === U.toLowerCase()) === -1 || match.toLowerCase() === '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82') && isPrimaryContract(match).then(() => resolve(match)).catch(() => {
       regexMessageForCa_memory = ''
     })
   })

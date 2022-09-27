@@ -19,7 +19,7 @@ import {
   fetchPresaleContract,
 } from '../launchpad/index'
 
-export const initializePresaleContract = (contractAddress: any, menuOption: any) => {
+export const initializePresaleContract = (contractAddress: any, menuOption: number) => {
   return new Promise((J, l) => {
     isSecondaryContract(contractAddress).then(() => {
       fetchPresaleContract(contractAddress, menuOption).then(X => J(X)).catch(error => l(error))
@@ -27,14 +27,14 @@ export const initializePresaleContract = (contractAddress: any, menuOption: any)
   })
 }
 
-export const executePresaleContribution = async (userAddress: any, privateKey: any, presaleAddress: any, startTime: any, menuOption: any, configs: any, chain: any, amountsOut: any) => {
+export const executePresaleContribution = async (userAddress: number, privateKey: number, presaleAddress: any, startTime: any, menuOption: number, configs: any, chain: any, amountsOut: any) => {
   printSubHeading('Blockchain Transaction')
   await contributeToPresale(userAddress, privateKey, presaleAddress, startTime, menuOption, configs, chain, amountsOut).catch(error => {
     throw error
   })
 }
 
-export const executeSniperSwap = async (userAddress: any, privateKey: any, contractAddress: any, configs: any, chain: any, exchange: any, menuSelection = 1) => {
+export const executeSniperSwap = async (userAddress: number, privateKey: number, contractAddress: any, configs: any, chain: any, exchange: any, menuSelection = 1) => {
   printHeading('Sniper Execution')
 
   if (configs.honeypot_check.toLowerCase() === 'true') {
@@ -58,7 +58,7 @@ export const executeSniperSwap = async (userAddress: any, privateKey: any, contr
   })
 }
 
-export const executePredictionBot = async (userAddress: any, privateKey: any, configs: any, menuOption: any, menuSelection: any) => {
+export const executePredictionBot = async (userAddress: number, privateKey: number, configs: any, menuOption: number, menuSelection: any) => {
   printSubHeading('Blockchain Transaction')
   console.log('Press the <CTRL+C> key to quit.\n')
   await predictionBotMethodology(userAddress, privateKey, configs, menuOption, menuSelection).catch(error => {
