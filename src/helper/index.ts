@@ -204,7 +204,7 @@ export const regexMessageForCa = (G: any, D = []) => {
           match = '0x' + G.match(pattern3)[1]
           regexMessageForCa_memory = ''
         } else
-          pattern4.test(G) && (regexMessageForCa_memory = '0x' + G.match(s)[1], Q = regexMessageForCa_memory)
+          pattern4.test(G) && (regexMessageForCa_memory = '0x' + G.match(pattern4)[1], Q = regexMessageForCa_memory)
       }
     }
 
